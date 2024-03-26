@@ -1,9 +1,8 @@
-package com.hana.spring1;
+package com.hana.app;
 
-import com.hana.spring1.data.CustDto;
-import com.hana.spring1.exception.DuplicatedIdException;
-import com.hana.spring1.frame.Service;
-import com.hana.spring1.service.CustService;
+import com.hana.app.data.CustDto;
+import com.hana.app.exception.DuplicatedIdException;
+import com.hana.app.frame.Service;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,7 +12,7 @@ public class Main {
                 new ClassPathXmlApplicationContext("spring.xml");
 
         Service<String, CustDto> service =
-                (Service<String, CustDto>) factory.getBean("userService");
+                (Service<String, CustDto>) factory.getBean("custService");
 
         CustDto u = new CustDto("id02", "pwd02", "lee");
         try {
@@ -21,5 +20,7 @@ public class Main {
         } catch (DuplicatedIdException e) {
             throw new RuntimeException(e);
         }
+
+
     }
 }

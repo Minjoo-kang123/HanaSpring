@@ -1,18 +1,14 @@
-package com.hana.spring1.repository;
+package com.hana.app.repository;
 
-import com.hana.spring1.data.CustDto;
-import com.hana.spring1.exception.DuplicatedIdException;
-import com.hana.spring1.frame.Dao;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.hana.app.data.CustDto;
+import com.hana.app.exception.DuplicatedIdException;
+import com.hana.app.frame.Dao;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-
 @Repository
 public class CustDao implements Dao<String, CustDto> {
-
-
     @Override
     public int insert(CustDto custDto) throws DuplicatedIdException {
         //System.out.println("Duplicated ID Exception ");
