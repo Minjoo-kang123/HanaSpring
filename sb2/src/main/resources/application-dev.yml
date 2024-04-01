@@ -1,5 +1,5 @@
 server:
-  port: 8088
+  port: 80
   servlet:
     encoding:
       charset: UTF-8
@@ -9,8 +9,6 @@ spring:
     view:
       prefix: /views/
       suffix: .jsp
-#  configuration:
-#    map-underscore-to-camel-case: true
 logging:
   level:
     root: info
