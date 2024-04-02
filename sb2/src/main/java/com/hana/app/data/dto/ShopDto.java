@@ -1,16 +1,26 @@
 package com.hana.app.data.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-@ToString
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class ShopDto {
-    int target;
-    String title;
-    String img;
-    double lat;
-    double lng;
+    private int id;
+    private String title;
+    private String img;
+    private double lat;
+    private double lng;
 }
+
+
+
+
+
+
+
+

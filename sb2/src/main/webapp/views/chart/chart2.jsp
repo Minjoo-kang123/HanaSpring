@@ -1,41 +1,80 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <style>
     #container{
-        width: 400px;
+        width: 600px;
         height: 500px;
-        border: 1px solid blueviolet;
+        border: 2px solid red;
     }
 </style>
 <script>
     let chart2 = {
-        init:function (){
-            $('#getData').click(()=>{
+        init: function () {
+            $('#get').click(()=>{
                 this.get();
-            })
-        },get:function (){
+            });
+            setInterval(()=>{this.get();},3000);
+        },
+        get:function(){
             $.ajax({
-                url:'<c:url value="chart/getdata">',
+                url:'<c:url value="/chart2" />',
                 success:(data)=>{
                     this.chart(data);
                 }
-            })
-        } ,chart:function(data){
-
-    }
-    }
-    $(function(){
+            });
+        },
+        chart:function(data){
+            Highcharts.chart('container', {
+                chart: {
+                    type: 'spline'
+                },
+                title: {
+                    text: 'Monthly Average Temperature'
+                },
+                subtitle: {
+                    text: 'Source: ' +
+                        '<a href="https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature" ' +
+                        'target="_blank">Wikipedia.com</a>'
+                },
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    accessibility: {
+                        description: 'Months of the year'
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: 'Temperature'
+                    },
+                    labels: {
+                        format: '{value}°'
+                    }
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: data
+            });
+        }
+    };
+    $(function () {
         chart2.init();
-    })
+    });
 </script>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-<button id="getData" type="button" class="btn btn-primary">GET</button>
-<div id="container"></div>
-</body>
-</html>
+<div class="container">
+    <h2>Chart2 Page</h2>
+    <button id="get" type="button" class="btn btn-primary">GET</button>
+    <div id="container"></div>
+</div>

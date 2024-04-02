@@ -15,21 +15,33 @@ public class ChartController {
         return "index";
     }
     @RequestMapping("/chart1")
-    public String chart1(Model model){
+    public String geo1(Model model){
         model.addAttribute("left", dir+"left");
         model.addAttribute("center",dir+"chart1");
         return "index";
     }
     @RequestMapping("/chart2")
-    public String ajax2(Model model){
+    public String geo2(Model model){
         model.addAttribute("left", dir+"left");
         model.addAttribute("center",dir+"chart2");
         return "index";
     }
     @RequestMapping("/chart3")
-    public String ajax3(Model model){
+    public String geo3(Model model){
         model.addAttribute("left", dir+"left");
         model.addAttribute("center",dir+"chart3");
+        return "index";
+    }
+    @RequestMapping("/chart4")
+    public String geo4(Model model){
+        model.addAttribute("left", dir+"left");
+        model.addAttribute("center",dir+"chart4");
+        return "index";
+    }
+    @RequestMapping("/chart5")
+    public String geo5(Model model){
+        model.addAttribute("left", dir+"left");
+        model.addAttribute("center",dir+"chart5");
         return "index";
     }
 }

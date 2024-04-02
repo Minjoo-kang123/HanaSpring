@@ -1,121 +1,84 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 하나로H017
-  Date: 2024-04-01
-  Time: 오전 9:15
-  To change this template use File | Settings | File Templates.
---%><%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <style>
     #container{
-        width: 400px;
+        width: 600px;
         height: 500px;
-        border: 1px solid blueviolet;
+        border: 2px solid red;
     }
 </style>
 <script>
-
     let chart1 = {
-        init:function (){
+        init: function () {
             Highcharts.chart('container', {
-            chart: {
-                type: 'spline'
-            },
-            title: {
-                text: 'Monthly Average Temperature'
-            },
-            subtitle: {
-                text: 'Source: ' +
-                    '<a href="https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature" ' +
-                    'target="_blank">Wikipedia.com</a>'
-            },
-            xAxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                accessibility: {
-                    description: 'Months of the year'
-                }
-            },
-            yAxis: {
+                chart: {
+                    type: 'spline'
+                },
                 title: {
-                    text: 'Temperature'
+                    text: 'Monthly Average Temperature'
                 },
-                labels: {
-                    format: '{value}°'
-                }
-            },
-            tooltip: {
-                crosshairs: true,
-                shared: true
-            },
-            plotOptions: {
-                spline: {
-                    marker: {
-                        radius: 4,
-                        lineColor: '#666666',
-                        lineWidth: 1
-                    }
-                }
-            },
-            series: [{
-                name: 'Tokyo',
-                marker: {
-                    symbol: 'square'
+                subtitle: {
+                    text: 'Source: ' +
+                        '<a href="https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature" ' +
+                        'target="_blank">Wikipedia.com</a>'
                 },
-                data: [5.2, 5.7, 8.7, 13.9, 18.2, 21.4, 25.0, {
-                    y: 26.4,
-                    marker: {
-                        symbol: 'url(https://www.highcharts.com/samples/graphics/sun.png)'
-                    },
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
                     accessibility: {
-                        description: 'Sunny symbol, this is the warmest point in the chart.'
+                        description: 'Months of the year'
                     }
-                }, 22.8, 17.5, 12.1, 7.6]
+                },
+                yAxis: {
+                    title: {
+                        text: 'Temperature'
+                    },
+                    labels: {
+                        format: '{value}°'
+                    }
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    marker: {
+                        symbol: 'square'
+                    },
+                    data: [1,2,3,4,5,6,7,8,5,3,2,1]
 
-            }, {
-                name: 'Bergen',
-                marker: {
-                    symbol: 'diamond'
-                },
-                data: [{
-                    y: 1.5,
+                }, {
+                    name: 'Bergen',
                     marker: {
-                        symbol: 'url(https://www.highcharts.com/samples/graphics/snow.png)'
+                        symbol: 'diamond'
                     },
-                    accessibility: {
-                        description: 'Snowy symbol, this is the coldest point in the chart.'
-                    }
-                }, 1.6, 3.3, 5.9, 10.5, 13.5, 14.5, 14.4, 11.5, 8.7, 4.7, 2.6]
-            }, {
-                name: 'selout',
-                marker: {
-                    symbol: 'diamond'
-                },
-                data: [{
-                    y: 1.5,
+                    data: [1.6, 3.3, 5.9, 10.5, 13.5, 14.5, 14.4, 11.5, 8.7, 4.7, 2.6]
+                }, {
+                    name: 'Korea',
                     marker: {
-                        symbol: 'url(https://www.highcharts.com/samples/graphics/snow.png)'
+                        symbol: 'diamond'
                     },
-                    accessibility: {
-                        description: 'Snowy symbol, this is the coldest point in the chart.'
-                    }
-                }, -1.6, 13.3, 25.9, 15.5, 23.5, 34.5, 24.4, 12.5, 23.7, 12.7, 3.6]
-            }]
-        });
-
+                    data: [-1.6, 2.3, 10.9, 13.5, 18.5, 30.5, 35.4, 16.5, 14.7, 10.7, 2.6]
+                }]
+            });
         }
-    }
-    $(function(){
+    };
+    $(function () {
         chart1.init();
-    })
+    });
 </script>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<div class="container">
+    <h2>Chart1 Page</h2>
     <div id="container"></div>
-</body>
-</html>
+</div>
