@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hana.app.repository.ItemRepository">
+
+    <select id="select" parameterType="Integer" resultType="ItemDto">
+        SELECT * FROM db_item WHERE id=#{id}
+    </select>
+    <select id="selectAll" resultType="ItemDto">
+        SELECT * FROM db_item
+    </select>
+    <insert id="insert" parameterType="ItemDto">
+        INSERT INTO db_item VALUES (0, #{item_name},#{item_price},#{img_name}, now(), now())
+    </insert>
+    <update id="update" parameterType="ItemDto">
+        UPDATE db_cust SET item_name=#{item_name},item_price=#{item_price}, img_name=#{img_name}, updatedate = now() WHERE id=#{id}
+    </update>
+    <delete id="delete" parameterType="Integer">
+        DELETE FROM db_cust WHERE id=#{id}
+    </delete>
+
+</mapper>

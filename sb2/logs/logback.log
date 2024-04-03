@@ -1,0 +1,999 @@
+[2024-04-02 10:48:34:1369][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 37 mappings in 'requestMappingHandlerMapping'
+[2024-04-02 10:48:34:1407][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /img/**, /logs/**] in 'resourceHandlerMapping'
+[2024-04-02 10:48:34:1420][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-04-02 10:48:34:1439][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-04-02 11:01:24:1409][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 37 mappings in 'requestMappingHandlerMapping'
+[2024-04-02 11:01:24:1457][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /img/**, /logs/**] in 'resourceHandlerMapping'
+[2024-04-02 11:01:24:1471][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-04-02 11:01:24:1490][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-04-02 11:01:41:18282][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-04-02 11:01:41:18283][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2024-04-02 11:01:41:18283][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2024-04-02 11:01:41:18283][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2024-04-02 11:01:41:18283][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@419a981b
+[2024-04-02 11:01:41:18284][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@72c4a8c4
+[2024-04-02 11:01:41:18284][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-04-02 11:01:41:18284][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2024-04-02 11:01:41:18292][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:01:41:18302][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:01:41:18325][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:01:41:18325][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:01:41:18325][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:01:41:18325][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:01:41:18342][http-nio-8088-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:01:41:18342][http-nio-8088-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:01:41:18342][http-nio-8088-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:01:41:18342][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:01:41:18342][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:01:41:18342][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:01:41:18342][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:01:41:18358][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:01:41:18358][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:01:42:18727][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:01:42:18727][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:01:42:18741][http-nio-8088-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:01:42:18742][http-nio-8088-exec-3] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:01:42:18742][http-nio-8088-exec-3] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:01:42:18742][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:01:42:18745][http-nio-8088-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:01:42:18746][http-nio-8088-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:01:42:18746][http-nio-8088-exec-3] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:01:42:18746][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:01:42:18746][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:01:42:18746][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:01:42:18746][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:01:42:18746][http-nio-8088-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:01:42:18758][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:02:04:41025][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:02:04:41026][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:02:04:41028][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:02:04:41028][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:02:04:41029][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:02:04:41029][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:02:04:41031][http-nio-8088-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:02:04:41033][http-nio-8088-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:02:04:41034][http-nio-8088-exec-2] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:02:04:41034][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:02:04:41035][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:02:04:41035][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:02:04:41036][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:02:04:41046][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:02:04:41048][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:02:23:60015][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:02:23:60016][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:02:23:60016][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:02:23:60016][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:02:23:60016][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:02:23:60016][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:02:23:60017][http-nio-8088-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:02:23:60018][http-nio-8088-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:02:23:60018][http-nio-8088-exec-4] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:02:23:60018][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:02:23:60018][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:02:23:60018][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:02:23:60019][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:02:23:60023][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:02:23:60024][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:03:30:1385][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 37 mappings in 'requestMappingHandlerMapping'
+[2024-04-02 11:03:30:1425][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /img/**, /logs/**] in 'resourceHandlerMapping'
+[2024-04-02 11:03:30:1441][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-04-02 11:03:30:1459][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-04-02 11:03:56:27140][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-04-02 11:03:56:27140][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2024-04-02 11:03:56:27140][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2024-04-02 11:03:56:27140][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2024-04-02 11:03:56:27140][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2af4bae1
+[2024-04-02 11:03:56:27141][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@175aabb5
+[2024-04-02 11:03:56:27141][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-04-02 11:03:56:27141][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2024-04-02 11:03:56:27150][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:03:56:27169][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:03:56:27200][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:03:56:27200][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:03:56:27206][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:03:56:27212][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:03:56:27217][http-nio-8088-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:03:56:27223][http-nio-8088-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:03:56:27230][http-nio-8088-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:03:56:27231][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:03:56:27233][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:03:56:27234][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:03:56:27237][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:03:56:27252][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:03:56:27257][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:07:38505][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/chart", parameters={}
+[2024-04-02 11:04:07:38506][http-nio-8088-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:07:38507][http-nio-8088-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:07:38507][http-nio-8088-exec-2] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource chart.]
+[2024-04-02 11:04:07:38507][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:07:38508][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:07:38508][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:07:38514][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:07:38514][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:24:54590][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:24:54590][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:24:54591][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:24:54591][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:24:54591][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:24:54591][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:24:54592][http-nio-8088-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:24:54593][http-nio-8088-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:24:54593][http-nio-8088-exec-4] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:24:54593][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:24:54593][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:24:54594][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:24:54594][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:24:54600][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:24:54601][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:24:54665][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+[2024-04-02 11:04:24:54666][http-nio-8088-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:24:54667][http-nio-8088-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:24:54668][http-nio-8088-exec-3] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+[2024-04-02 11:04:24:54668][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:24:54668][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:24:54669][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-04-02 11:04:24:54683][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+[2024-04-02 11:04:24:54686][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Apr 02 11:04:24 KST 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+[2024-04-02 11:04:24:54710][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:35:66423][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:35:66424][http-nio-8088-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:35:66425][http-nio-8088-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:35:66425][http-nio-8088-exec-6] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:35:66425][http-nio-8088-exec-6] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:35:66425][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:35:66426][http-nio-8088-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:35:66428][http-nio-8088-exec-6] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:35:66428][http-nio-8088-exec-6] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:35:66429][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:35:66429][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:35:66429][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:35:66429][http-nio-8088-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:35:66435][http-nio-8088-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:35:66436][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:36:66957][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:36:66957][http-nio-8088-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:36:66958][http-nio-8088-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:36:66958][http-nio-8088-exec-5] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:36:66959][http-nio-8088-exec-5] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:36:66959][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:36:66960][http-nio-8088-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:36:66961][http-nio-8088-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:36:66961][http-nio-8088-exec-5] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:36:66961][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:36:66961][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:36:66961][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:36:66962][http-nio-8088-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:36:66967][http-nio-8088-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:36:66968][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:36:67292][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:36:67292][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:36:67293][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:36:67293][http-nio-8088-exec-7] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:36:67293][http-nio-8088-exec-7] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:36:67293][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:36:67298][http-nio-8088-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:36:67300][http-nio-8088-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:36:67301][http-nio-8088-exec-7] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:36:67301][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:36:67302][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:36:67302][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:36:67303][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:36:67310][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:36:67312][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:37:67870][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 37 mappings in 'requestMappingHandlerMapping'
+[2024-04-02 11:04:37:67882][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /img/**, /logs/**] in 'resourceHandlerMapping'
+[2024-04-02 11:04:37:67885][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-04-02 11:04:37:67887][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-04-02 11:04:37:67958][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-04-02 11:04:37:67958][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2024-04-02 11:04:37:67958][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2024-04-02 11:04:37:67958][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2024-04-02 11:04:37:67958][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@14996cc4
+[2024-04-02 11:04:37:67959][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1a5e8027
+[2024-04-02 11:04:37:67959][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-04-02 11:04:37:67959][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2024-04-02 11:04:37:67959][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:37:67959][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:37:67960][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:37:67960][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:37:67960][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:37:67960][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:37:67961][http-nio-8088-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:37:67961][http-nio-8088-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:37:67961][http-nio-8088-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:37:67961][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:37:67961][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:37:67962][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:37:67962][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:37:67966][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:37:67967][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:38:68704][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:38:68704][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:38:68704][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:38:68704][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:38:68704][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:38:68704][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:38:68704][http-nio-8088-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:38:68705][http-nio-8088-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:38:68705][http-nio-8088-exec-2] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:38:68705][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:38:68705][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:38:68706][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:38:68706][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:38:68711][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:38:68711][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:38:69567][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 37 mappings in 'requestMappingHandlerMapping'
+[2024-04-02 11:04:39:69575][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /img/**, /logs/**] in 'resourceHandlerMapping'
+[2024-04-02 11:04:39:69576][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-04-02 11:04:39:69577][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-04-02 11:04:39:69624][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-04-02 11:04:39:69624][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2024-04-02 11:04:39:69624][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2024-04-02 11:04:39:69624][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2024-04-02 11:04:39:69625][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2e678df1
+[2024-04-02 11:04:39:69625][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@20a0664d
+[2024-04-02 11:04:39:69625][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-04-02 11:04:39:69625][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2024-04-02 11:04:39:69625][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:39:69625][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:39:69626][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:39:69626][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:39:69626][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:39:69626][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:39:69627][http-nio-8088-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:39:69627][http-nio-8088-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:39:69627][http-nio-8088-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:39:69627][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:39:69627][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:39:69627][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:39:69627][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:39:69633][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:39:69633][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:39:69690][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:39:69693][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:39:69694][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:39:69695][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:39:69695][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:39:69695][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:39:69695][http-nio-8088-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:39:69696][http-nio-8088-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:39:69697][http-nio-8088-exec-2] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:39:69697][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:39:69697][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:39:69698][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:39:69698][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:39:69703][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:39:69704][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:39:70318][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:39:70318][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:39:70318][http-nio-8088-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:39:70318][http-nio-8088-exec-3] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:39:70318][http-nio-8088-exec-3] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:39:70318][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:39:70319][http-nio-8088-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:39:70319][http-nio-8088-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:39:70319][http-nio-8088-exec-3] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:39:70319][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:39:70320][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:39:70320][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:39:70320][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:39:70329][http-nio-8088-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:39:70329][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:40:70700][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:40:70700][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:40:70701][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:40:70701][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:40:70701][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:40:70701][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:40:70702][http-nio-8088-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:40:70702][http-nio-8088-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:40:70702][http-nio-8088-exec-4] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:40:70702][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:40:70702][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:40:70703][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:40:70703][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:40:70707][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:40:70707][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:40:71000][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:40:71000][http-nio-8088-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:40:71001][http-nio-8088-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:40:71001][http-nio-8088-exec-5] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:40:71001][http-nio-8088-exec-5] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:40:71001][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:40:71002][http-nio-8088-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:40:71003][http-nio-8088-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:40:71003][http-nio-8088-exec-5] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:40:71003][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:40:71004][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:40:71004][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:40:71004][http-nio-8088-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:40:71015][http-nio-8088-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:40:71015][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:40:71364][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:40:71364][http-nio-8088-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:40:71365][http-nio-8088-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:40:71365][http-nio-8088-exec-6] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:40:71365][http-nio-8088-exec-6] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:40:71365][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:40:71366][http-nio-8088-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:40:71368][http-nio-8088-exec-6] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:40:71368][http-nio-8088-exec-6] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:40:71368][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:40:71369][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:40:71369][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:40:71369][http-nio-8088-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:40:71378][http-nio-8088-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:40:71378][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:04:41:71659][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:04:41:71659][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:04:41:71660][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:04:41:71660][http-nio-8088-exec-7] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:04:41:71661][http-nio-8088-exec-7] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:04:41:71661][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:04:41:71663][http-nio-8088-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:04:41:71664][http-nio-8088-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:04:41:71664][http-nio-8088-exec-7] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:04:41:71665][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:04:41:71665][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:04:41:71665][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:04:41:71665][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:04:41:71676][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:04:41:71677][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:06:13:1619][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 37 mappings in 'requestMappingHandlerMapping'
+[2024-04-02 11:06:13:1659][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /img/**, /logs/**] in 'resourceHandlerMapping'
+[2024-04-02 11:06:13:1675][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-04-02 11:06:13:1694][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-04-02 11:06:17:5309][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-04-02 11:06:17:5309][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2024-04-02 11:06:17:5309][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2024-04-02 11:06:17:5309][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2024-04-02 11:06:17:5309][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7f77d057
+[2024-04-02 11:06:17:5309][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7963540b
+[2024-04-02 11:06:17:5310][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-04-02 11:06:17:5310][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2024-04-02 11:06:17:5314][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:06:17:5322][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:06:17:5333][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:06:17:5333][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:06:17:5337][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:06:17:5339][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:06:17:5341][http-nio-8088-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:06:17:5342][http-nio-8088-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:06:17:5346][http-nio-8088-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:06:17:5348][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:06:17:5349][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:06:17:5349][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:06:17:5350][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:06:17:5359][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:06:17:5362][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:07:11:1530][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 37 mappings in 'requestMappingHandlerMapping'
+[2024-04-02 11:07:11:1570][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /img/**, /logs/**] in 'resourceHandlerMapping'
+[2024-04-02 11:07:11:1586][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-04-02 11:07:11:1605][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-04-02 11:07:25:15695][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-04-02 11:07:25:15695][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2024-04-02 11:07:25:15695][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2024-04-02 11:07:25:15695][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2024-04-02 11:07:25:15696][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@39ab41ca
+[2024-04-02 11:07:25:15696][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@70aa55f
+[2024-04-02 11:07:25:15697][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-04-02 11:07:25:15697][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2024-04-02 11:07:25:15707][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:07:25:15720][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:07:25:15740][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:07:25:15741][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:07:25:15748][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:07:25:15752][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:07:25:15755][http-nio-8088-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:07:25:15758][http-nio-8088-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:07:25:15764][http-nio-8088-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:07:25:15766][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:07:25:15767][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:07:25:15767][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:07:25:15768][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:07:25:15781][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:07:25:15785][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:07:26:16919][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:07:26:16920][http-nio-8088-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:07:26:16920][http-nio-8088-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:07:26:16921][http-nio-8088-exec-9] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:07:26:16921][http-nio-8088-exec-9] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:07:26:16921][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:07:26:16922][http-nio-8088-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:07:26:16923][http-nio-8088-exec-9] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:07:26:16923][http-nio-8088-exec-9] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:07:26:16923][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:07:26:16924][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:07:26:16924][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:07:26:16924][http-nio-8088-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:07:27:16933][http-nio-8088-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:07:27:16935][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:07:57:47093][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:07:57:47093][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:07:57:47094][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:07:57:47094][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:07:57:47094][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:07:57:47094][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:07:57:47095][http-nio-8088-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:07:57:47096][http-nio-8088-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:07:57:47096][http-nio-8088-exec-4] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:07:57:47096][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:07:57:47097][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:07:57:47097][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:07:57:47098][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:07:57:47102][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:07:57:47103][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:07:58:48200][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:07:58:48200][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:07:58:48201][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:07:58:48201][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:07:58:48201][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:07:58:48201][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:07:58:48202][http-nio-8088-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:07:58:48202][http-nio-8088-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:07:58:48203][http-nio-8088-exec-2] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:07:58:48203][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:07:58:48203][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:07:58:48203][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:07:58:48204][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:07:58:48209][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:07:58:48210][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:07:58:48485][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:07:58:48485][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:07:58:48485][http-nio-8088-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:07:58:48486][http-nio-8088-exec-3] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:07:58:48486][http-nio-8088-exec-3] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:07:58:48486][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:07:58:48487][http-nio-8088-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:07:58:48487][http-nio-8088-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:07:58:48487][http-nio-8088-exec-3] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:07:58:48487][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:07:58:48488][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:07:58:48488][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:07:58:48488][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:07:58:48491][http-nio-8088-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:07:58:48492][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:07:59:49011][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:07:59:49011][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:07:59:49012][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:07:59:49012][http-nio-8088-exec-7] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:07:59:49012][http-nio-8088-exec-7] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:07:59:49012][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:07:59:49013][http-nio-8088-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:07:59:49014][http-nio-8088-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:07:59:49014][http-nio-8088-exec-7] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:07:59:49014][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:07:59:49014][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:07:59:49014][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:07:59:49015][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:07:59:49019][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:07:59:49020][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:07:59:49231][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:07:59:49231][http-nio-8088-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:07:59:49232][http-nio-8088-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:07:59:49232][http-nio-8088-exec-6] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:07:59:49232][http-nio-8088-exec-6] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:07:59:49232][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:07:59:49233][http-nio-8088-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:07:59:49234][http-nio-8088-exec-6] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:07:59:49234][http-nio-8088-exec-6] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:07:59:49234][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:07:59:49234][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:07:59:49235][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:07:59:49236][http-nio-8088-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:07:59:49239][http-nio-8088-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:07:59:49240][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:07:59:49437][http-nio-8088-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:07:59:49437][http-nio-8088-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:07:59:49438][http-nio-8088-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:07:59:49438][http-nio-8088-exec-8] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:07:59:49438][http-nio-8088-exec-8] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:07:59:49438][http-nio-8088-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:07:59:49439][http-nio-8088-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:07:59:49440][http-nio-8088-exec-8] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:07:59:49440][http-nio-8088-exec-8] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:07:59:49440][http-nio-8088-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:07:59:49440][http-nio-8088-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:07:59:49440][http-nio-8088-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:07:59:49440][http-nio-8088-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:07:59:49446][http-nio-8088-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:07:59:49447][http-nio-8088-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:07:59:49621][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:07:59:49622][http-nio-8088-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:07:59:49622][http-nio-8088-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:07:59:49622][http-nio-8088-exec-5] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:07:59:49622][http-nio-8088-exec-5] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:07:59:49622][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:07:59:49623][http-nio-8088-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:07:59:49623][http-nio-8088-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:07:59:49623][http-nio-8088-exec-5] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:07:59:49623][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:07:59:49623][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:07:59:49624][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:07:59:49624][http-nio-8088-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:07:59:49629][http-nio-8088-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:07:59:49629][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:07:59:49803][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:07:59:49803][http-nio-8088-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:07:59:49804][http-nio-8088-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:07:59:49804][http-nio-8088-exec-10] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:07:59:49804][http-nio-8088-exec-10] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:07:59:49804][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:07:59:49804][http-nio-8088-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:07:59:49805][http-nio-8088-exec-10] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:07:59:49805][http-nio-8088-exec-10] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:07:59:49805][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:07:59:49805][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:07:59:49805][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:07:59:49806][http-nio-8088-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:07:59:49810][http-nio-8088-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:07:59:49811][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:08:00:49980][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:08:00:49980][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:08:00:49981][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:08:00:49981][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:08:00:49981][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:08:00:49981][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:08:00:49982][http-nio-8088-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:08:00:49983][http-nio-8088-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:08:00:49983][http-nio-8088-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:08:00:49983][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:08:00:49983][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:08:00:49983][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:08:00:49983][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:08:00:49987][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:08:00:49988][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:08:00:50216][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:08:00:50216][http-nio-8088-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:08:00:50217][http-nio-8088-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:08:00:50217][http-nio-8088-exec-9] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:08:00:50217][http-nio-8088-exec-9] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:08:00:50217][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:08:00:50217][http-nio-8088-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:08:00:50218][http-nio-8088-exec-9] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:08:00:50219][http-nio-8088-exec-9] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:08:00:50219][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:08:00:50219][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:08:00:50219][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:08:00:50220][http-nio-8088-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:08:00:50223][http-nio-8088-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:08:00:50223][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:08:00:50438][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:08:00:50438][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:08:00:50439][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:08:00:50439][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:08:00:50439][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:08:00:50439][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:08:00:50439][http-nio-8088-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:08:00:50440][http-nio-8088-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:08:00:50440][http-nio-8088-exec-4] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:08:00:50440][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:08:00:50440][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:08:00:50440][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:08:00:50440][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:08:00:50444][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:08:00:50445][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:08:00:50650][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:08:00:50650][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:08:00:50651][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:08:00:50651][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:08:00:50651][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:08:00:50651][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:08:00:50651][http-nio-8088-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:08:00:50652][http-nio-8088-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:08:00:50652][http-nio-8088-exec-2] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:08:00:50652][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:08:00:50652][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:08:00:50652][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:08:00:50653][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:08:00:50656][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:08:00:50657][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:08:00:50833][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:08:00:50833][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:08:00:50834][http-nio-8088-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:08:00:50834][http-nio-8088-exec-3] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:08:00:50834][http-nio-8088-exec-3] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:08:00:50834][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:08:00:50835][http-nio-8088-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:08:00:50835][http-nio-8088-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:08:00:50835][http-nio-8088-exec-3] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:08:00:50835][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:08:00:50835][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:08:00:50836][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:08:00:50836][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:08:00:50839][http-nio-8088-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:08:00:50839][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:08:01:51012][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:08:01:51013][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:08:01:51014][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:08:01:51014][http-nio-8088-exec-7] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:08:01:51014][http-nio-8088-exec-7] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:08:01:51014][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:08:01:51015][http-nio-8088-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:08:01:51016][http-nio-8088-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:08:01:51016][http-nio-8088-exec-7] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:08:01:51016][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:08:01:51016][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:08:01:51016][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:08:01:51016][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:08:01:51020][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:08:01:51021][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:15:125806][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:15:125806][http-nio-8088-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:15:125807][http-nio-8088-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:15:125807][http-nio-8088-exec-10] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:15:125807][http-nio-8088-exec-10] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:15:125807][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:15:125807][http-nio-8088-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:15:125808][http-nio-8088-exec-10] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:15:125809][http-nio-8088-exec-10] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:15:125809][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:15:125809][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:15:125810][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:15:125810][http-nio-8088-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:15:125815][http-nio-8088-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:15:125815][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:16:126556][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:16:126556][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:16:126557][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:16:126557][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:16:126557][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:16:126557][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:16:126558][http-nio-8088-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:16:126559][http-nio-8088-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:16:126559][http-nio-8088-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:16:126559][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:16:126559][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:16:126559][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:16:126560][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:16:126564][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:16:126564][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:50:160081][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 37 mappings in 'requestMappingHandlerMapping'
+[2024-04-02 11:09:50:160090][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2024-04-02 11:09:50:160092][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-04-02 11:09:50:160093][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-04-02 11:09:50:160122][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-04-02 11:09:50:160122][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2024-04-02 11:09:50:160122][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2024-04-02 11:09:50:160122][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2024-04-02 11:09:50:160123][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@64bceb86
+[2024-04-02 11:09:50:160123][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6a7b0961
+[2024-04-02 11:09:50:160123][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-04-02 11:09:50:160123][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2024-04-02 11:09:50:160123][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:50:160123][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:50:160124][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:50:160124][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:50:160124][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:50:160124][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:50:160125][http-nio-8088-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:50:160125][http-nio-8088-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:50:160125][http-nio-8088-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:50:160125][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:50:160125][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:50:160125][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:50:160126][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:50:160130][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:50:160130][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:50:160832][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:50:160832][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:50:160833][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:50:160833][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:50:160833][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:50:160833][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:50:160833][http-nio-8088-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:50:160834][http-nio-8088-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:50:160834][http-nio-8088-exec-2] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:50:160834][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:50:160834][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:50:160835][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:50:160835][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:50:160838][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:50:160838][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:57:167423][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:57:167423][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:57:167423][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:57:167423][http-nio-8088-exec-7] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:57:167423][http-nio-8088-exec-7] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:57:167424][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:57:167424][http-nio-8088-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:57:167426][http-nio-8088-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:57:167427][http-nio-8088-exec-7] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:57:167427][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:57:167427][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:57:167427][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:57:167427][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:57:167432][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:57:167433][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:58:167995][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:58:167995][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:58:167996][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:58:167996][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:58:167996][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:58:167996][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:58:167997][http-nio-8088-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:58:167999][http-nio-8088-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:58:167999][http-nio-8088-exec-4] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:58:167999][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:58:167999][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:58:167999][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:58:168000][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:58:168006][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:58:168007][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:58:168266][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:58:168266][http-nio-8088-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:58:168267][http-nio-8088-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:58:168267][http-nio-8088-exec-6] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:58:168267][http-nio-8088-exec-6] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:58:168267][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:58:168267][http-nio-8088-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:58:168267][http-nio-8088-exec-6] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:58:168268][http-nio-8088-exec-6] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:58:168268][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:58:168269][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:58:168269][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:58:168270][http-nio-8088-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:58:168274][http-nio-8088-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:58:168274][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:58:168537][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:58:168537][http-nio-8088-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:58:168538][http-nio-8088-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:58:168538][http-nio-8088-exec-5] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:58:168538][http-nio-8088-exec-5] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:58:168538][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:58:168539][http-nio-8088-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:58:168540][http-nio-8088-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:58:168540][http-nio-8088-exec-5] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:58:168540][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:58:168540][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:58:168540][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:58:168541][http-nio-8088-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:58:168548][http-nio-8088-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:58:168548][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:58:168747][http-nio-8088-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:58:168747][http-nio-8088-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:58:168747][http-nio-8088-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:58:168747][http-nio-8088-exec-8] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:58:168747][http-nio-8088-exec-8] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:58:168747][http-nio-8088-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:58:168748][http-nio-8088-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:58:168748][http-nio-8088-exec-8] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:58:168749][http-nio-8088-exec-8] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:58:168749][http-nio-8088-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:58:168749][http-nio-8088-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:58:168749][http-nio-8088-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:58:168749][http-nio-8088-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:58:168754][http-nio-8088-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:58:168754][http-nio-8088-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:59:168981][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:59:168982][http-nio-8088-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:59:168982][http-nio-8088-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:59:168982][http-nio-8088-exec-9] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:59:168983][http-nio-8088-exec-9] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:59:168984][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:59:168984][http-nio-8088-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:59:168984][http-nio-8088-exec-9] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:59:168985][http-nio-8088-exec-9] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:59:168985][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:59:168985][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:59:168985][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:59:168986][http-nio-8088-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:59:168995][http-nio-8088-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:59:168996][http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:59:169214][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:59:169215][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:59:169215][http-nio-8088-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:59:169215][http-nio-8088-exec-3] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:59:169216][http-nio-8088-exec-3] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:59:169216][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:59:169217][http-nio-8088-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:59:169219][http-nio-8088-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:59:169219][http-nio-8088-exec-3] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:59:169219][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:59:169219][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:59:169220][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:59:169220][http-nio-8088-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:59:169228][http-nio-8088-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:59:169228][http-nio-8088-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:59:169473][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:59:169473][http-nio-8088-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:59:169474][http-nio-8088-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:59:169474][http-nio-8088-exec-10] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:59:169474][http-nio-8088-exec-10] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:59:169474][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:59:169474][http-nio-8088-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:59:169476][http-nio-8088-exec-10] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:59:169477][http-nio-8088-exec-10] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:59:169477][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:59:169477][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:59:169478][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:59:169478][http-nio-8088-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:59:169486][http-nio-8088-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:59:169487][http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:59:169680][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:59:169681][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:59:169681][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:59:169681][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:59:169681][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:59:169681][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:59:169682][http-nio-8088-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:59:169683][http-nio-8088-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:59:169683][http-nio-8088-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:59:169683][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:59:169683][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:59:169683][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:59:169683][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:59:169689][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:59:169689][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:09:59:169892][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:09:59:169893][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:09:59:169893][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:09:59:169894][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:09:59:169894][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:09:59:169894][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:09:59:169894][http-nio-8088-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:09:59:169894][http-nio-8088-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:09:59:169894][http-nio-8088-exec-2] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:09:59:169894][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:09:59:169894][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:09:59:169896][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:09:59:169896][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:09:59:169908][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:09:59:169909][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:10:00:170180][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:10:00:170181][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:10:00:170182][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:10:00:170182][http-nio-8088-exec-7] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:10:00:170182][http-nio-8088-exec-7] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:10:00:170182][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:10:00:170182][http-nio-8088-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:10:00:170184][http-nio-8088-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:10:00:170184][http-nio-8088-exec-7] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:10:00:170184][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:10:00:170184][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:10:00:170184][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:10:00:170185][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:10:00:170192][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:10:00:170193][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:10:33:1513][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 37 mappings in 'requestMappingHandlerMapping'
+[2024-04-02 11:10:33:1554][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /img/**, /logs/**] in 'resourceHandlerMapping'
+[2024-04-02 11:10:33:1568][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-04-02 11:10:33:1587][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-04-02 11:10:38:6590][http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-04-02 11:10:38:6590][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2024-04-02 11:10:38:6590][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2024-04-02 11:10:38:6590][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2024-04-02 11:10:38:6591][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3cffd68b
+[2024-04-02 11:10:38:6591][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@73446017
+[2024-04-02 11:10:38:6592][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-04-02 11:10:38:6592][http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2024-04-02 11:10:38:6600][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:10:38:6613][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:10:38:6629][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:10:38:6630][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:10:38:6632][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:10:38:6635][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:10:38:6638][http-nio-8088-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:10:38:6640][http-nio-8088-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:10:38:6643][http-nio-8088-exec-2] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:10:38:6645][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:10:38:6645][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:10:38:6645][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:10:38:6646][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:10:38:6655][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:10:38:6658][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:11:45:73186][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:11:45:73186][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:11:45:73187][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:11:45:73187][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:11:45:73187][http-nio-8088-exec-4] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:11:45:73187][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:11:45:73189][http-nio-8088-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:11:45:73191][http-nio-8088-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:11:45:73191][http-nio-8088-exec-4] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:11:45:73191][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:11:45:73191][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:11:45:73192][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:11:45:73192][http-nio-8088-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:11:45:73195][http-nio-8088-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:11:45:73196][http-nio-8088-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:11:45:73672][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:11:45:73673][http-nio-8088-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:11:45:73674][http-nio-8088-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:11:45:73674][http-nio-8088-exec-5] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:11:45:73674][http-nio-8088-exec-5] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:11:45:73674][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:11:45:73676][http-nio-8088-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:11:45:73677][http-nio-8088-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:11:45:73678][http-nio-8088-exec-5] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:11:45:73678][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:11:45:73678][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:11:45:73678][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:11:45:73679][http-nio-8088-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:11:45:73684][http-nio-8088-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:11:45:73684][http-nio-8088-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:11:45:73894][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:11:45:73894][http-nio-8088-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:11:45:73896][http-nio-8088-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:11:45:73896][http-nio-8088-exec-6] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:11:45:73896][http-nio-8088-exec-6] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:11:45:73896][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:11:45:73897][http-nio-8088-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:11:45:73898][http-nio-8088-exec-6] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:11:45:73898][http-nio-8088-exec-6] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:11:45:73898][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:11:45:73898][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:11:45:73899][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:11:45:73899][http-nio-8088-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:11:45:73905][http-nio-8088-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:11:45:73906][http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:11:46:74127][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:11:46:74128][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:11:46:74128][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:11:46:74128][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:11:46:74129][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:11:46:74129][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:11:46:74129][http-nio-8088-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:11:46:74130][http-nio-8088-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:11:46:74130][http-nio-8088-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:11:46:74130][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:11:46:74131][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:11:46:74131][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:11:46:74131][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:11:46:74137][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:11:46:74137][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:11:48:76580][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img", parameters={}
+[2024-04-02 11:11:48:76581][http-nio-8088-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/HanaSpring/sb2/imgs]]
+[2024-04-02 11:11:48:76581][http-nio-8088-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:11:48:76581][http-nio-8088-exec-7] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+[2024-04-02 11:11:48:76581][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:11:48:76581][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:11:48:76582][http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:11:48:76590][http-nio-8088-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:11:48:76590][http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:12:54:1384][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 37 mappings in 'requestMappingHandlerMapping'
+[2024-04-02 11:12:54:1423][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /img/**, /logs/**] in 'resourceHandlerMapping'
+[2024-04-02 11:12:54:1436][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-04-02 11:12:54:1456][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-04-02 11:13:23:30700][http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-04-02 11:13:23:30701][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2024-04-02 11:13:23:30701][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2024-04-02 11:13:23:30701][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2024-04-02 11:13:23:30702][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3cffd68b
+[2024-04-02 11:13:23:30702][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@73446017
+[2024-04-02 11:13:23:30702][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-04-02 11:13:23:30702][http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2024-04-02 11:13:23:30709][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:13:23:30716][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:13:23:30730][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:13:23:30730][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:13:23:30733][http-nio-8088-exec-2] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:13:24:30735][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:13:24:30737][http-nio-8088-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:13:24:30739][http-nio-8088-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:13:24:30743][http-nio-8088-exec-2] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:13:24:30745][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:13:24:30745][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:13:24:30746][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:13:24:30747][http-nio-8088-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:13:24:30759][http-nio-8088-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:13:24:30762][http-nio-8088-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:13:24:30894][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2024-04-02 11:13:24:30894][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hana.controller.MainController#main()
+[2024-04-02 11:13:24:30894][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2024-04-02 11:13:24:30895][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name 'index', model {}
+[2024-04-02 11:13:24:30895][http-nio-8088-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [index]
+[2024-04-02 11:13:24:30895][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/index", parameters={}
+[2024-04-02 11:13:24:30896][http-nio-8088-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-04-02 11:13:24:30897][http-nio-8088-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2024-04-02 11:13:24:30897][http-nio-8088-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.]
+[2024-04-02 11:13:24:30897][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 404
+[2024-04-02 11:13:24:30898][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2024-04-02 11:13:24:30898][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2024-04-02 11:13:24:30899][http-nio-8088-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[2024-04-02 11:13:24:30904][http-nio-8088-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[2024-04-02 11:13:24:30906][http-nio-8088-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2024-04-02 11:13:51:58314][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 37 mappings in 'requestMappingHandlerMapping'
+[2024-04-02 11:13:51:58327][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /img/**, /logs/**] in 'resourceHandlerMapping'
+[2024-04-02 11:13:51:58328][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-04-02 11:13:51:58330][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
