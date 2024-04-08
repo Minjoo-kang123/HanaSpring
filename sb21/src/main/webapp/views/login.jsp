@@ -7,11 +7,11 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<script>
+    <script>
 
-    $(function(){
-        login.init('<c:url value="/loginimpl"/>');
-    });
+        $(function(){
+            login.init('<c:url value="/loginimpl"/>');
+        });
 
 </script>
 <div class="container">

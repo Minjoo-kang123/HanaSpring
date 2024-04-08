@@ -27,7 +27,7 @@ logging:
 
 app:
   dir:
-    imgdir: file:///C:/project/imgs
-    logdir: file:///C:/project/logs
+    imgdir: file:C:/project/imgs/
+    logdir: file:C:/project/logs/
 
     # /root/logs/

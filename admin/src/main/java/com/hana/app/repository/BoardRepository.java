@@ -9,6 +9,6 @@ import java.util.List;
 
 @Repository
 @Mapper
-public interface AddrRepository extends HanaRepository<Integer, AddrDto> {
-    List<AddrDto> selectId(String custId) throws Exception;;
+public interface BoardRepository extends HanaRepository<Integer, AddrDto> {
+    List<AddrDto> findByCustId(String id);
 }

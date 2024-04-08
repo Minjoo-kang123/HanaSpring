@@ -39,7 +39,6 @@ public class AddrService implements HanaService<Integer, AddrDto> {
         return addrRepository.selectAll();
     }
 
-
     public List<AddrDto> getId(String custId) throws Exception {
         return addrRepository.selectId(custId);
     }
