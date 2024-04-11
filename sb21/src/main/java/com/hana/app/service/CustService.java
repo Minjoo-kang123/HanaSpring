@@ -1,5 +1,7 @@
 package com.hana.app.service;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.hana.app.data.dto.CustDto;
 import com.hana.app.frame.HanaService;
 import com.hana.app.repository.CustRepository;
@@ -37,5 +39,10 @@ public class CustService implements HanaService<String, CustDto> {
     @Override
     public List<CustDto> get() throws Exception {
         return custRepository.selectAll();
+    }
+
+    public Page<CustDto> getPage(int pageNo) throws Exception{
+        PageHelper.startPage(pageNo, 3);
+        return custRepository.getpage();
     }
 }

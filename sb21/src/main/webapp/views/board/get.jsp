@@ -23,7 +23,7 @@
         <tbody>
         <c:forEach var="c" items="${boards}">
             <tr>
-                <td><a href="<c:url value="/board/detail"/>?id=${c.boardId}">${c.boardTitle}</a></td>
+                <td><a href="<c:url value="/board/detail"/>?id=${c.boardId}">${c.boardTitle}</a> (${c.commentCnt})</td>
                 <td>${c.custId}</td>
                 <td>${c.boardRegdate}</td>
                 <td>${c.boardCnt}</td>

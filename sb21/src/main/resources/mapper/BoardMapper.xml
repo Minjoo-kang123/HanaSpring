@@ -4,15 +4,38 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hana.app.repository.BoardRepository">
 
+    <resultMap id="boardcomment" type="boardDto">
+        <id column="board_id" property="boardId"/>
+        <result column="board_title" property="boardTitle"/>
+        <result column="board_content" property="boardContent"/>
+        <result column="cust_id" property="custId"/>
+        <result column="board_regdate" property="boardRegdate"/>
+        <result column="board_update" property="boardUpdate"/>
+        <collection property="commentList" ofType="commentDto">
+            <id column="comment_id" property="commentId"/>
+            <result column="cust_id" property="custId"/>
+            <result column="comment_content" property="commentContent"/>
+            <result column="comment_regdate" property="commentRegdate"/>
+            <result column="comment_rpdate" property="commentUpdate"/>
+            <result column="board_id" property="boardId"/>
+        </collection>
+    </resultMap>
+
     <select id="select" parameterType="Integer" resultType="BoardDto">
         SELECT * FROM db_board WHERE board_id=#{boardId}
+    </select>
+
+    <select id="getRank" parameterType="Integer" resultType="BoardDto">
+        SELECT * FROM db_board ORDER BY board_cnt desc LIMIT 4
     </select>
 
     <update id="updateBoardCount" parameterType="Integer">
         UPDATE db_board SET board_cnt = board_cnt + 1 WHERE board_id=#{boardId}
     </update>
     <select id="selectAll" resultType="BoardDto">
-        SELECT * FROM db_board
+        select b.*,(select count(*) from  db_comment where board_id = b.board_id) as comment_cnt
+        from db_board b;
+
     </select>
     <select id="selectId" parameterType="String" resultType="BoardDto">
         SELECT * FROM db_board where cust_id = #{custId}

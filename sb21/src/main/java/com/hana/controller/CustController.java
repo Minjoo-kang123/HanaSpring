@@ -1,5 +1,6 @@
 package com.hana.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.hana.app.data.dto.AddrDto;
 import com.hana.app.data.dto.CustDto;
 import com.hana.app.service.AddrService;
@@ -81,6 +82,20 @@ public class CustController {
             model.addAttribute("center","/registerfail");
             return "index";
         }
+        return "index";
+    }
+
+    @RequestMapping("/allpage")
+    public String allpage(@RequestParam(required = false, defaultValue = "1") int pageNo, Model model) throws Exception {
+        PageInfo<CustDto> p;
+        try {
+            p = new PageInfo<>(custService.getPage(pageNo), 5); // 5:하단 네비게이션 개수
+        } catch (Exception e) {
+            throw new Exception("시스템 장애: ER0001");
+        }
+        model.addAttribute("cpage",p);
+        model.addAttribute("left",dir+"left");
+        model.addAttribute("center",dir+"allpage");
         return "index";
     }
 }

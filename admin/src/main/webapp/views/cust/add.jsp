@@ -6,6 +6,20 @@
         url:'',
         init:function(url){
             this.url = url;
+            $('#custId').keyup(()=>{
+                let custId = $('#custId').val();
+                $.ajax({
+                    url:'<c:url value="/registercheck"/>',
+                    data:{'id':custId},
+                    success:(result)=>{
+                        let msg = '입력가능합니다.';
+                        if(result == '0'){
+                            msg = '사용 불가능 합니다.'
+                        }
+                        $('#check_msg').html(msg);
+                    }
+                })
+            })
             $('#register_form > button').click(()=>{
                 let custId = $('#custId').val();
                 let pwd = $('#pwd').val();
@@ -57,6 +71,7 @@
                     <div class="form-group">
                         <label for="custId">ID:</label>
                         <input type="text" class="form-control" id="custId" placeholder="Enter id" name="custId">
+                        <span id="check_msg"></span>
                     </div>
                     <div class="form-group">
                         <label for="pwd">Password:</label>

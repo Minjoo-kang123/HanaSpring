@@ -20,4 +20,7 @@
         DELETE FROM db_cust WHERE cust_id=#{custId}
     </delete>
 
+    <select id="getpage" resultType="custDto">
+        SELECT * FROM db_cust
+    </select>
 </mapper>

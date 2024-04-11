@@ -27,7 +27,7 @@
             <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
 
         </div>
-
+        <p>${msg}</p>
         <button type="button" class="btn btn-primary">LOGIN</button>
     </form>
 </div>

@@ -25,6 +25,9 @@
     <%-- Custom API   --%>
     <script src="<c:url value="/js/0327.js" />"></script>
 
+    <%-- Web Socket Lib    --%>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
     <style>
         .fakeimg {
             height: 200px;

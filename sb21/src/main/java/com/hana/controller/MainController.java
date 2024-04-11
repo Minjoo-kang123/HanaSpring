@@ -1,24 +1,43 @@
 package com.hana.controller;
 
+import com.hana.app.data.dto.BoardDto;
 import com.hana.app.data.dto.CustDto;
+import com.hana.app.service.BoardService;
 import com.hana.app.service.CustService;
+import com.hana.util.WeatherUtil;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.json.simple.parser.ParseException;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
+import java.util.List;
+import java.util.Random;
 @Controller
 @Slf4j
 @RequiredArgsConstructor
 public class MainController {
 
     final CustService custService;
+    final BoardService boardService;
+
+    @Value("${app.key.wkey1}")
+    String wkey1;
+
+    @Value("${app.key.wkey2}")
+    String wkey2;
+    @Value("${app.url.serverurl}")
+    String serverurl;
 
     @RequestMapping("/")
-    public String main(){
+    public String main(Model model) throws Exception {
+        List<BoardDto> list = null;
+        list = boardService.getRank();
+        model.addAttribute("boards", list);
         return "index";
     }
 
@@ -49,16 +68,15 @@ public class MainController {
             }
             httpSession.setAttribute("id", id);
         } catch (Exception e) {
-            model.addAttribute("center","loginfail");
-            //throw new RuntimeException(e);
+            model.addAttribute("center","login");
+            model.addAttribute("msg","ID 또는 PWD가 틀립니다.");
         }
-        return "index";
+        return "redirect:/";
     }
 
     @RequestMapping("/registerimpl")
     public String registerimpl(Model model,
                                CustDto custDto, HttpSession httpSession){
-
         try {
             custService.add(custDto);
             httpSession.setAttribute("id", custDto.getCustId());
@@ -66,8 +84,6 @@ public class MainController {
             //throw new RuntimeException(e);
             model.addAttribute("center","/registerfail");
         }
-
-
         return "index";
     }
     @RequestMapping("/register")
@@ -75,6 +91,36 @@ public class MainController {
         model.addAttribute("center","register");
         return "index";
     }
+    @RequestMapping("/chat")
+    public String chat(Model model){
+        model.addAttribute("serverurl",serverurl);
+        model.addAttribute("center","chat");
+        return "index";
+    }
+    @ResponseBody
+    @RequestMapping("/registercheck")
+    public Object register(Model model, @RequestParam("id") String id) throws Exception {
+        String result = "0";
+        CustDto custDto = custService.get(id);
+        if (custDto == null) {
+            result = "1";
+        }
+        return result;
+    }
+    @RequestMapping("/wh")
+    @ResponseBody
+    public Object wh(Model model) throws IOException, ParseException {
+        return WeatherUtil.getWeather("109", wkey1);
+    }
 
-
+    @RequestMapping("/whget")
+    @ResponseBody
+    public Object wh2(Model model) throws IOException, ParseException {
+        return WeatherUtil.getWeather2("1835848", wkey2);
+    }
+    @RequestMapping("/weather")
+    public String weather(Model model){
+        model.addAttribute("center","weather");
+        return "index";
+    }
 }
