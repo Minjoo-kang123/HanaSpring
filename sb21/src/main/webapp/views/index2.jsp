@@ -34,6 +34,45 @@
             background: #aaa;
         }
     </style>
+
+    <script>
+        let arr1 = [];
+        let arr2 = [];
+        let websocket = {
+            id:'',
+            stompClient:null,
+            msg:'',
+            init:function(){
+                $('notice_del').click(()=>{
+                    arr1 = [];
+                    arr2 = [];
+                })
+
+                let socket = new SockJS('${serverurl}/wsa');
+                this.stompClient = Stomp.over(socket);
+
+                this.stompClient.connect({}, function(frame) {
+                    this.subscribe('/send3',function (msg){
+                        //메시가 왔음을 알림
+                        this.msg = JSON.parse(msg.body).content1;
+                        // 메세지를 변수에 저장함\function appendMessage(msgData) {
+                        let messageList = $("#drop");
+                        messageList.append(
+                            "<div><a class='dropdown-item d-flex align-items-center'>"
+                            +   "<div class='font-weight-bold'>"
+                            +       "<div class='text-truncate'>"+JSON.parse(msg.body).content1+"</div>"
+                            +    "</div>"
+                            + "</a></div>"
+                        );
+
+                    })
+                });
+            }
+        };
+        $(function(){
+            websocket.init();
+        });
+    </script>
 </head>
 <body>
 
@@ -51,22 +90,11 @@
                     <span class="badge badge-danger badge-counter"></span>
                 </a>
                 <!-- Dropdown - Alerts -->
-                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                <div id = "drop" class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                      aria-labelledby="alertsDropdown">
                     <h6 class="dropdown-header">
                         Alerts Center
                     </h6>
-                    <a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="mr-3">
-                            <div class="icon-circle bg-primary">
-                                <i class="fas fa-file-alt text-white"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="small text-gray-500">December 12, 2019</div>
-                            <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                        </div>
-                    </a>
 
                     <button type="button" class="dropdown-item text-center small text-gray-500" id = "notice_del">Delete All</button>
                 </div>
@@ -88,7 +116,7 @@
                 <a class="nav-link" href="<c:url value="/cust/detail"/>?id=${id}">${id}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<c:url value="/logoutimpl" />">LOGOUT</a>
+                <a class="nav-link" href="<c:url value="/logout" />">LOGOUT</a>
             </li>
         </ul>
 

@@ -25,7 +25,7 @@
                     }
                 })
             });
-            $('#register_form #register_btn').click(function(){
+            $('#register_btn').click(function(){
                 let custId = $('#custId').val();
                 let pwd = $('#pwd').val();
                 let name = $('#name').val();
@@ -50,7 +50,7 @@
         send:function(){
             $('#register_form').attr({
                 'method':'post',
-                'action':this.url
+                'action':'/registerimpl'
             });
             $('#register_form').submit();
         }

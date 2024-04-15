@@ -31,4 +31,7 @@
   <li class="nav-item">
     <a class="nav-link" href="<c:url value="/chat"/>">xcaht</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="<c:url value="/pic"/>">Pic</a>
+  </li>
 </ul>

@@ -5,6 +5,7 @@ import com.hana.app.data.dto.AddrDto;
 import com.hana.app.data.dto.CustDto;
 import com.hana.app.service.AddrService;
 import com.hana.app.service.CustService;
+import com.hana.util.StringEnc;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
