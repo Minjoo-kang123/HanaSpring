@@ -13,14 +13,12 @@ public class StomWebSocketConfig implements WebSocketMessageBrokerConfigurer{
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/ws").setAllowedOriginPatterns("*").withSockJS();
-        registry.addEndpoint("/wss").setAllowedOriginPatterns("http://172.16.20.115").withSockJS();
-        registry.addEndpoint("/wss").setAllowedOriginPatterns("http://172.16.21.239").withSockJS();
-        registry.addEndpoint("/wsa").setAllowedOriginPatterns("http://172.16.20.115").withSockJS();
-        registry.addEndpoint("/wsa").setAllowedOriginPatterns("http://172.16.21.239").withSockJS();
-        registry.addEndpoint("/wsa").setAllowedOriginPatterns("*").withSockJS();
+        registry.addEndpoint("/wss").setAllowedOriginPatterns("*").withSockJS();
+        registry.addEndpoint("/chat").setAllowedOriginPatterns("*").withSockJS();
 //        registry.addEndpoint("/ws").setAllowedOrigins("http://127.0.0.1").withSockJS();
 //        registry.addEndpoint("/chbot").setAllowedOrigins("http://127.0.0.1").withSockJS();
 //        registry.addEndpoint("/wss").setAllowedOrigins("http://127.0.0.1").withSockJS();
+//        registry.addEndpoint("/wsa").setAllowedOrigins("*").withSockJS();
     }
 
     /* 어플리케이션 내부에서 사용할 path를 지정할 수 있음 */
