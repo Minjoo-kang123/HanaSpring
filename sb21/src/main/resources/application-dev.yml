@@ -40,14 +40,15 @@ logging:
 app:
   url:
     serverurl: http://172.16.20.115:81
+    chatboturl: http://172.16.20.115
   dir:
     imgdir: file:C:/project/imgs/
     logdir: file:C:/project/logs/
     upload: C:/project/imgs/
   key:
-    wkey1: C2YXvxKurZ%2FmXrbnFlyub5B89GCCWUmYncj4wvNqlWzyP0IwmeP%2FAVl1mU3Tz7Kzk8mfT3f6Wm2wJJ9Z6yNjgw%3D%3D
-    wkey2: 0faffdd2af7935a08ddaed08d62ebb03
-    ncp-id: cdiveyxu0a
-    ncp-secret: 4pZIZcmNFTmufLkMGkSVRTPBOaMQDyTIc2gr8Qx2
+    wkey1: ENC(FN+rJQL3jLpxqkY2BIyHVh+BlUbpR+hdM8v8FlGZsqyJP7yPa8fU2B+jSvkAdAdMilwy8XArHKTRQglexi3+9NXUuQPOWVqyJN0hoGLKzbH0XG8bT4BDtW4UJjd1/iaOe7/Q5KnYIXEklSWd+/q6Eg==)
+    wkey2: ENC(twARCNZg2KV7P0HidCiRsEpQpjvJyJlPcSBvWfVJLwRDBsalTRLhkpHYMgAwuoxk)
+    ncp-id: ENC(/omEIjlsceGJACAa6PbqMf3N5bXpHdBL)
+    ncp-secret: ENC(xAzKCkqxJM4iUp6m6Sl0D4+yEOloKNmYqyxcfiE6GpAyyecmCYTveeHlYWlzRtnwrOm/c95IJ0s=)
 
     # /root/logs/

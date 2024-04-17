@@ -93,7 +93,7 @@
                 document.body.appendChild(scrollBtn2);
                 scrollBtn2.classList.add("show");
                 scrollBtn2.addEventListener("click", function(){
-                    location.href='<c:url value="/chat2"/>';
+                    location.href='<c:url value="/chatbot"/>';
                 });
             }
         };

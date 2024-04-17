@@ -1,17 +1,15 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <script>
   let left = {
     init: function () {
       $('#btn_board_add').click(()=>{
         if('${sessionScope.id}' == '' || '${sessionScope.id}' == null){
-          alert("No login")
-          let next = $('#btn_board_add').attr();
           $('#btn_board_add').removeAttr('href');
+          alert('로그인 하셔야 합니다.');
         }
-
-      })
+      });
     }
   };
   $(function () {
@@ -20,18 +18,21 @@
 </script>
 <ul class="nav nav-pills flex-column">
   <li class="nav-item">
-    <a id="btn_board_add" class="nav-link" href="<c:url value="/board/add"/>">Board add</a>
+    <a id="btn_board_add" class="nav-link" href="<c:url value="/board/add"/>">Board Add</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="<c:url value="/board/get"/>">Board get</a>
+    <a class="nav-link" href="<c:url value="/board/get"/>">Board Get</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="<c:url value="/weather"/>">Weather</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="<c:url value="/chat"/>">xcaht</a>
+    <a class="nav-link" href="<c:url value="/pic"/>">Pic</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="<c:url value="/pic"/>">Pic</a>
+    <a class="nav-link" href="<c:url value="/summary"/>">Summary</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="<c:url value="/ocr"/>">Ocr</a>
   </li>
 </ul>
