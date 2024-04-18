@@ -2,31 +2,31 @@
 
 let login = {
     url:'',
-    init:function(url){
-        this.url = url;
-        $('#login_form > button').click(function(){
-            let id = $('#id').val();
-            let pwd = $('#pwd').val();
-            if(id == '' || id == null){
-                alert('ID를 입력 하세요');
-                $('#id').focus();
-                return;
-            }
-            if(pwd == '' || pwd == null){
-                alert('PWD를 입력 하세요');
-                $('#pwd').focus();
-                return;
-            }
-            login.send();
-        });
-    },
-    send:function(){
-        $('#login_form').attr({
-            'method':'post',
-            'action':this.url
-        });
-        $('#login_form').submit();
-    }
+        init:function(url){
+            this.url = url;
+            $('#login_form > button').click(function(){
+                let id = $('#id').val();
+                let pwd = $('#pwd').val();
+                if(id == '' || id == null){
+                    alert('ID를 입력 하세요');
+                    $('#id').focus();
+                    return;
+                }
+                if(pwd == '' || pwd == null){
+                    alert('PWD를 입력 하세요');
+                    $('#pwd').focus();
+                    return;
+                }
+                login.send();
+            });
+        },
+        send:function(){
+            $('#login_form').attr({
+                'method':'post',
+                'action':this.url
+            });
+            $('#login_form').submit();
+        }
 };
 
 // JSON (JavaScript Object Notation)

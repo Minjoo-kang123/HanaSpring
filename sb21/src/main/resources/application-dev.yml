@@ -50,5 +50,8 @@ app:
     wkey2: ENC(twARCNZg2KV7P0HidCiRsEpQpjvJyJlPcSBvWfVJLwRDBsalTRLhkpHYMgAwuoxk)
     ncp-id: ENC(/omEIjlsceGJACAa6PbqMf3N5bXpHdBL)
     ncp-secret: ENC(xAzKCkqxJM4iUp6m6Sl0D4+yEOloKNmYqyxcfiE6GpAyyecmCYTveeHlYWlzRtnwrOm/c95IJ0s=)
+    chatbot_key: blNGTnFMbnJ0aER6WG1ubmRVU1JuSFh0dU1oU0NMaUc=
+    chatbot_url: https://xdpyx9zoyh.apigw.ntruss.com/custom/v1/14182/704b9ad58d53e734f0f4affb9915de3a67949b656bbc82cba5fecc21a9d4f5f0
+
 
     # /root/logs/

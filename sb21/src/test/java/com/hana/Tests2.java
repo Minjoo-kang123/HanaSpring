@@ -2,28 +2,27 @@ package com.hana;
 
 import com.hana.app.data.dto.CustDto;
 import com.hana.app.service.CustService;
+import com.hana.util.ChatBotUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 @Slf4j
 class Tests2 {
 
-    @Autowired
-    CustService custService;
-    @Test
-    void contextLoads() {
-        CustDto c = CustDto.builder().custId("1").pwd("pwdxx").name("james").build();
+    @Value("${app.key.chatbot_key}")
+    private String secretKey;
+    @Value("${app.key.chatbot_url}")
+    private String apiUrl;
 
-        try {
-            custService.get("12");
-            log.info("----------OK----------------");
-        } catch (Exception e) {
-            e.printStackTrace();
-            log.info("----------no----------------");
-        }
+    @Test
+    void contextLoads() throws Exception {
+        String msg = "힘들겠네";
+        String result = ChatBotUtil.getMsg(apiUrl,secretKey,msg);
+        log.info(result);
     }
 
 }

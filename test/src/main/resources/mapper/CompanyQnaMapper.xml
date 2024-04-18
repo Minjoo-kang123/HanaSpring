@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hana.app.repository.CompanyQnaRepository">
+
+    <select id="select" parameterType="Integer" resultType="CompanyQnaDto">
+        SELECT * FROM company_qna WHERE qna_idx=#{qnaIdx}
+    </select>
+
+    <select id="selectAll" resultType="CompanyQnaDto">
+        SELECT * FROM company_qna
+    </select>
+    <insert id="insert" parameterType="CompanyQnaDto">
+        INSERT INTO company_qna VALUES (0, #{one2oneName},#{one2onePhone},#{one2oneEmail},
+                                           #{one2oneAddress},#{one2oneTitle},#{one2oneContent}, now())
+    </insert>
+    <update id="update" parameterType="CompanyQnaDto">
+        UPDATE company_qna SET one2one_name=#{one2oneName}, one2one_phone=#{one2onePhone}, one2one_email=#{one2oneEmail},
+                                   one2one_address=#{one2oneAddress}, one2one_title=#{one2oneTitle}, one2one_content=#{one2oneContent}  WHERE one2one_idx=#{one2oneIdx}
+    </update>
+    <delete id="delete" parameterType="Integer">
+        DELETE FROM company_qna WHERE qna_idx=#{qnaIdx}
+    </delete>
+
+</mapper>

@@ -44,20 +44,27 @@
 <!-- 헤더 -->
 <!-- 탑메뉴 -->
 <div class="toTopScroll">
-    <img src="./img/icon-top.png" onClick="javascript:window.scrollTo(0,0)">
+    <img src="<c:url value="/img/icon-top.png"/>" onClick="javascript:window.scrollTo(0,0)">
 </div>
 <div class="top d-none d-md-block">
     <div class="topMenu d-none d-md-block container">
-        <span class="home"><a href="index.html">HOME</a></span>
-        <span><a href="./member/login.html">LOGIN</a></span>
-        <span><a href="./member/join.html">JOIN</a></span>
+        <span class="home"><a href="<c:url value="/"/>">HOME</a></span>
+        <c:choose>
+            <c:when test="${sessionScope.id == null}">
+                <span><a href="<c:url value="/member/login"/>">LOGIN</a></span>
+                <span><a href="<c:url value="/member/join"/>">JOIN</a></span>
+            </c:when>
+            <c:otherwise>
+                <span><a href="<c:url value="/member/logoutimpl"/>">LOGOUT</a></span>
+            </c:otherwise>
+        </c:choose>
         <span><a href="./company/company03.html">CONTACT US</a></span>
     </div>
 </div>
 <!-- 네비바 -->
 <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="로고"></a>
+        <a class="navbar-brand" href="<c:url value="/"/>"><img src="<c:url value="/img/logo.png"/>" alt="로고"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -67,8 +74,8 @@
             <ul class="navbar-nav ml-auto">
                 <!-- d-block : display: block  display: none -->
                 <li class="nav-item d-sm-block d-md-none ljoin">
-                    <a href="./member/login.html"> <img src="./img/icon-member.png">&nbsp;&nbsp;Login</a>&nbsp;
-                    <a href="./member/join.html"> <img src="./img/icon-join.png">&nbsp;&nbsp;Join</a>
+                    <a href="<c:url value="/member/login"/>"> <img src="<c:url value="/img/icon-member.png"/>">&nbsp;&nbsp;Login</a>&nbsp;
+                    <a href=".<c:url value="/member/join"/>"> <img src="<c:url value="/img/icon-join.png"/>">&nbsp;&nbsp;Join</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#">회사소개</a>
@@ -105,7 +112,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#">고객지원</a>
                     <div class="dropdown-content">
-                        <a href="./customer/customer01.html">1:1문의</a>
+                        <a href="<c:url value="/customer/customer01"/>">1:1문의</a>
                         <a href="./customer/customer02.html">묻고답하기</a>
                         <a href="./customer/customer03.html">FAQ</a>
                     </div>
@@ -141,10 +148,10 @@
         고객지원 : 010-2222-3333, FAX : 070-888-5555, EMAIL : support@gmail.com, 사업자등록번호 : 100-02-00033, 통신판매업 : 제1111-경기-00000호<br>COPYRIGHT(C) 2021 CODINGGANSA. ALL RIGHT RESERVED.</span>
         </div>
         <div>
-            <img src="./img/mf-icon01.png" alt="">
-            <img src="./img/mf-icon02.png" alt="">
-            <img src="./img/mf-icon03.png" alt="">
-            <img src="./img/mf-icon04.png" alt="">
+            <img src="<c:url value="/img/mf-icon01.png"/>" alt="">
+            <img src="<c:url value="/img/mf-icon02.png"/>" alt="">
+            <img src="<c:url value="/img/mf-icon03.png"/>" alt="">
+            <img src="<c:url value="/img/mf-icon04.png"/>" alt="">
         </div>
     </div>
 </div>

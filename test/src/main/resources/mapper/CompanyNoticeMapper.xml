@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hana.app.repository.CompanyNoticeRepository">
+
+    <select id="select" parameterType="Integer" resultType="CompanyNoticeDto">
+        SELECT * FROM company_notice WHERE notice_idx=#{noticeIdx}
+    </select>
+
+    <select id="selectAll" resultType="CompanyNoticeDto">
+        SELECT * FROM company_notice
+    </select>
+    <insert id="insert" parameterType="CompanyNoticeDto">
+        INSERT INTO company_notice VALUES (0, #{one2oneName},#{one2onePhone},#{one2oneEmail},
+                                           #{one2oneAddress},#{one2oneTitle},#{one2oneContent}, now())
+    </insert>
+    <update id="update" parameterType="CompanyNoticeDto">
+        UPDATE company_notice SET one2one_name=#{one2oneName}, one2one_phone=#{one2onePhone}, one2one_email=#{one2oneEmail},
+                                   one2one_address=#{one2oneAddress}, one2one_title=#{one2oneTitle}, one2one_content=#{one2oneContent}  WHERE one2one_idx=#{one2oneIdx}
+    </update>
+    <delete id="delete" parameterType="Integer">
+        DELETE FROM company_notice WHERE notice_idx=#{noticeIdx}
+    </delete>
+
+</mapper>

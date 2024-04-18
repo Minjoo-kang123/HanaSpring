@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hana.app.repository.MemberRepository">
+
+    <select id="select" parameterType="Integer" resultType="MemberDto">
+        SELECT * FROM company_member WHERE member_idx=#{memberIdx}
+    </select>
+
+    <select id="findId" parameterType="String" resultType="MemberDto">
+        SELECT * FROM company_member WHERE member_name=#{param1} and member_email=#{param2}
+    </select>
+    <select id="findPw" parameterType="String" resultType="MemberDto">
+        SELECT * FROM company_member WHERE member_name=#{param1} and member_id=#{param2} and member_email=#{param3}
+    </select>
+    <select id="selectById" parameterType="String" resultType="MemberDto">
+        SELECT * FROM company_member WHERE member_id=#{memberId}
+    </select>
+    <select id="selectAll" resultType="MemberDto">
+        SELECT * FROM company_member
+    </select>
+    <insert id="insert" parameterType="MemberDto">
+        INSERT INTO company_member VALUES (0, #{memberId},#{memberPw},#{memberName},
+                                           #{memberEmail},#{memberEmailReceive},#{memberPwQuestion},
+                                           #{memberPwAnswer},#{memberGender},#{memberBirthDate}, now())
+    </insert>
+    <update id="update" parameterType="MemberDto">
+        UPDATE company_member SET member_id=#{memberId}, member_pw=#{memberPw}, memberName=#{memberName},
+                                  member_email=#{memberEmail}, member_email_receive=#{memberEmailReceive}, member_pw_question=#{memberPwQuestion}  WHERE member_idx=#{memberIdx}
+    </update>
+    <delete id="delete" parameterType="Integer">
+        DELETE FROM company_member WHERE member_idx=#{memberIdx}
+    </delete>
+
+</mapper>

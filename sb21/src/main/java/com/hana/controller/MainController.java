@@ -7,10 +7,7 @@ import com.hana.app.data.dto.OcrDto;
 import com.hana.app.repository.LoginCustRepository;
 import com.hana.app.service.BoardService;
 import com.hana.app.service.CustService;
-import com.hana.util.FileUploadUtil;
-import com.hana.util.NcpUtil;
-import com.hana.util.OCRUtil;
-import com.hana.util.WeatherUtil;
+import com.hana.util.*;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -134,6 +131,11 @@ public class MainController {
         model.addAttribute("serverurl",serverurl);
         model.addAttribute("center","chat2");
         return "index";
+    }@RequestMapping("/chat4")
+    public String chat4(Model model){
+        model.addAttribute("serverurl",serverurl);
+        model.addAttribute("center","chat4");
+        return "index";
     }
     @RequestMapping("/pic")
     public String pic(Model model){
@@ -199,6 +201,7 @@ public class MainController {
         model.addAttribute("center","chatbot");
         return "index";
     }
+
     @RequestMapping("/ocrimpl")
     public String ocrimpl(Model model, OcrDto ocrDto) throws IOException {
         String imgname = ocrDto.getImage().getOriginalFilename();
