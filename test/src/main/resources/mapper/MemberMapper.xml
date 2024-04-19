@@ -20,13 +20,43 @@
     <select id="selectAll" resultType="MemberDto">
         SELECT * FROM company_member
     </select>
+
+    <select id="selectedDateDesc" resultType="MemberDto">
+        SELECT * FROM company_member order by member_join_date desc
+    </select>
+    <select id="selectedDateAsc" resultType="MemberDto">
+        SELECT * FROM company_member order by member_join_date asc
+    </select>
+    <select id="selectedIdDesc" resultType="MemberDto">
+        SELECT * FROM company_member order by member_id desc
+    </select>
+    <select id="selectedIdAsc" resultType="MemberDto">
+        SELECT * FROM company_member order by member_id asc
+    </select>
+
+
+    <select id="searchCEmail" parameterType="String" resultType="MemberDto">
+        SELECT * FROM company_member WHERE LOWER(member_email) LIKE CONCAT('%', #{param1}, '%')
+    </select>
+    <select id="searchName" parameterType="String" resultType="MemberDto">
+        SELECT * FROM company_member WHERE LOWER(member_name) LIKE CONCAT('%', #{param1}, '%')
+    </select>
+    <select id="searchAll" parameterType="String" resultType="MemberDto">
+        SELECT * FROM company_member WHERE LOWER(member_email) LIKE CONCAT('%', LOWER(#{param1}), '%')
+                                        or LOWER(member_id) LIKE CONCAT('%', LOWER(#{param1}), '%')
+                                        or LOWER(member_name) LIKE CONCAT('%', LOWER(#{param1}), '%')
+    </select>
+    <select id="searchId" parameterType="String" resultType="MemberDto">
+        SELECT * FROM company_member WHERE LOWER(member_id )LIKE CONCAT('%', LOWER(#{param1}), '%')
+    </select>
+
     <insert id="insert" parameterType="MemberDto">
         INSERT INTO company_member VALUES (0, #{memberId},#{memberPw},#{memberName},
                                            #{memberEmail},#{memberEmailReceive},#{memberPwQuestion},
                                            #{memberPwAnswer},#{memberGender},#{memberBirthDate}, now())
     </insert>
     <update id="update" parameterType="MemberDto">
-        UPDATE company_member SET member_id=#{memberId}, member_pw=#{memberPw}, memberName=#{memberName},
+        UPDATE company_member SET member_id=#{memberId}, member_pw=#{memberPw}, member_name=#{memberName},
                                   member_email=#{memberEmail}, member_email_receive=#{memberEmailReceive}, member_pw_question=#{memberPwQuestion}  WHERE member_idx=#{memberIdx}
     </update>
     <delete id="delete" parameterType="Integer">

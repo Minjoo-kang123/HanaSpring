@@ -1,6 +1,10 @@
 
 
-    <link rel="stylesheet" href="/css/member/login.css" />
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="<c:url value = "/css/member/login.css"/>" />
 
     <!-- 메인 -->
     <!-- COMMON -->
@@ -28,7 +32,7 @@
         <div><p>The design and maintenance are excellent.</p></div>
       </div>
       <div class="loginMain">
-        <form action="adminLoginAction" method="post">
+        <form action="<c:url value = "admin/loginimpl"/>" method="post">
           <table class="main1">
             <tr>
               <td>
@@ -36,8 +40,8 @@
                 비밀번호
               </td>
               <td>
-                <input type="text" name="member_id" /> <br />
-                <input type="text" name="member_pw" />
+                <input type="text" name="memberId" required/> <br />
+                <input type="text" name="memberPw" required/>
               </td>
               <td>
                 <input

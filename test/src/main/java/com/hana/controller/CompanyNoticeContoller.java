@@ -21,12 +21,22 @@ public class CompanyNoticeContoller {
     final static String dir = "community/";
     final CompanyNoticeService companyNoticeService;
     @RequestMapping("/community01")
-    public String customer02(Model model, HttpSession session) throws Exception {
+    public String customer02(Model model) throws Exception {
         List<CompanyNoticeDto> list = companyNoticeService.get();
         model.addAttribute("center", dir + "comunity01");
         model.addAttribute("list", list);
         return "index";
     }
+
+    @RequestMapping("/community01Sc")
+    public String customer03(Model model, HttpSession session,
+                             @RequestParam("keyword") String keyword, @RequestParam("select") String select) throws Exception {
+        List<CompanyNoticeDto> list = companyNoticeService.search(keyword, select);
+        model.addAttribute("center", dir + "comunity01");
+        model.addAttribute("list", list);
+        return "index";
+    }
+
     @RequestMapping("/community01_1")
     public String customer024(Model model, HttpSession session, @RequestParam("id") int id) throws Exception {
         log.info("hello");

@@ -1,122 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>회사홈페이지</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/common.css" />
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="<c:url value="/css/admin/admin.css"/>">
+<script>
+  let data = null;
+  let perpage = 10;
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstarp JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  function formatDate(date) {
+    const d = new Date(date);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return year + '-' + month + "-" + day;
+  }
 
-  <body>
-    <!-- 탑메뉴 -->
-    <div class="toTopScroll">
-      <img src="/img/icon-top.png" onClick="javascript:window.scrollTo(0,0)" />
-    </div>
-    <div class="top d-none d-md-block">
-      <div class="topMenu d-none d-md-block container">
-        <span class="home"><a href="/">HOME</a></span>
+  $(document).ready(function(){
 
-        <span><a href="/member/logoutAction">LOGOUT</a></span>
+    $('#order_select').change(function() {
+      var selectedOption = $('#order_select').val();
+      // AJAX 요청
+      $.ajax({
+        type: "GET",
+        url: "/admin_notice/order",
+        data: { order: selectedOption },
+        success: function(data) {
+          this.data = data;
+          var tbodyContent = ''; // 새로운 tbody 내용을 저장할 변수
+          if(perpage == 50){
+            data.forEach(function(item, n) {
+              // 각 데이터 항목을 기반으로 tr 요소 생성
+              tbodyContent += '<tr onclick="location.href=\'/admin_notice_view?idx=' + item.noticeIdx + '\'" style="cursor: pointer">';
+              tbodyContent += '<td>' + (n + 1) + '</td>';
+              tbodyContent += '<td>' + item.noticeTitle + '</td>';
+              tbodyContent += '<td>' + item.noticeMemberId + '</td>';
+              tbodyContent += '<td>' + formatDate(item.noticeDate)+ '</td>';
+              tbodyContent += '</tr>';
+            });
+          }
+          else{
+            for(let i = 0; i < perpage; i++){
+              if(data[i] == null)
+                break;
+              tbodyContent += '<tr onclick="location.href=\'/admin_notice_view?idx=' + data[i].noticeIdx + '\'" style="cursor: pointer">';
+              tbodyContent += '<td>' + (i + 1) + '</td>';
+              tbodyContent += '<td>' + data[i].noticeTitle + '</td>';
+              tbodyContent += '<td>' + data[i].noticeMemberId + '</td>';
+              tbodyContent += '<td>' + formatDate(data[i].noticeDate)+ '</td>';
+              tbodyContent += '</tr>';
+            }
+          }
 
-        <span><a href="/member/join">JOIN</a></span>
-        <span><a href="/company/company03">CONTACT US</a></span>
-      </div>
-    </div>
+          // 생성한 tbody 내용을 #memberTable에 추가
+          $('#adminTable').html(tbodyContent);
+        },
+        error: function(xhr, status, error) {
+          console.error("AJAX Error:", status, error);
+        }
+      });
+    });
 
-    <!-- 네비바 -->
-    <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="/"
-          ><img src="/img/logo.png" alt="로고"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <!-- ml-auto : margin-left  -->
-          <ul class="navbar-nav ml-auto">
-            <!-- d-block : display: block  display: none -->
-            <li class="nav-item d-sm-block d-md-none ljoin">
-              <a href="/member/login">
-                <img src="/img/icon-member.png" />&nbsp;&nbsp;Login</a
-              >&nbsp;
-              <a href="/member/join">
-                <img src="/img/icon-join.png" />&nbsp;&nbsp;Join</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">회사소개</a>
-              <div class="dropdown-content">
-                <a href="/company/company01">회사개요</a>
-                <a href="#">CEO인사말</a>
-                <a href="/company/company03">오시는길</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">사업분야</a>
-              <div class="dropdown-content">
-                <a href="/business/business01">사업분야01</a>
-                <a href="#">사업분야02</a>
-                <a href="#">사업분야03</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">제품안내</a>
-              <div class="dropdown-content">
-                <a href="/product/product01">제품안내01</a>
-                <a href="#">제품안내02</a>
-                <a href="#">제품안내03</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">커뮤니티</a>
-              <div class="dropdown-content">
-                <a href="/community/community01">공지사항</a>
-                <a href="#">홍보자료</a>
-                <a href="#">채용안내</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">고객지원</a>
-              <div class="dropdown-content">
-                <a href="/customer/customer01">1:1문의</a>
-                <a href="/customer/customer02">묻고답하기</a>
-                <a href="/customer/customer03">FAQ</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- main.jsp, login.jsp, ... -->
-    <link rel="stylesheet" href="/css/admin/admin.css" />
+    $('#page_select').change(function() {
+      var selectedOption = $('#order_select').val();
+      perpage = $(this).val();
+      // AJAX 요청
+      $.ajax({
+        type: "GET",
+        url: "/admin_notice/order",
+        data: { order: selectedOption },
+        success: function(data) {
+          this.data = data;
+          var tbodyContent = ''; // 새로운 tbody 내용을 저장할 변수
 
+          for(let i = 0; i < perpage; i++){
+            if(data[i] == null)
+              break;
+            tbodyContent += '<tr onclick="location.href=\'/admin_notice_view?idx=' + data[i].noticeIdx + '\'" style="cursor: pointer">';
+            tbodyContent += '<td>' + (i + 1) + '</td>';
+            tbodyContent += '<td>' + data[i].noticeTitle + '</td>';
+            tbodyContent += '<td>' + data[i].noticeMemberId + '</td>';
+            tbodyContent += '<td>' + formatDate(data[i].noticeDate)+ '</td>';
+            tbodyContent += '</tr>';
+          }
+          // 생성한 tbody 내용을 #memberTable에 추가
+          $('#adminTable  ').html(tbodyContent);
+        },
+        error: function(xhr, status, error) {
+          console.error("AJAX Error:", status, error);
+        }
+      });
+    });
+
+    // 정렬 기준이 변경될 때마다
+  });
+</script>
+<link rel="stylesheet" href="<c:url value="/css/admin/admin.css"/>">
     <!-- 메인 -->
     <!-- COMMON -->
 
@@ -156,22 +135,24 @@
         <div class="adminDiv">
           <h3>공지사항 관리</h3>
         </div>
-        <div class="adminDiv">
-          검색 옵션
-          <select name="search_select" id="search_select">
-            <option value="all" selected>전체</option>
-            <option value="title">제목</option>
-            <option value="content">내용</option>
-            <option value="id">작성자아이디</option>
-          </select>
-          <input
-            type="text"
-            name="search_keyword"
-            id="search_keyword"
-            value=""
-          />
-          <input type="image" src="../img/community/search.gif" />
-        </div>
+        <form method="get" action="<c:url value="/admin_noticeSc"/>">
+          <div class="adminDiv">
+            검색 옵션
+            <select name="select" id="search_select">
+              <option value="all" selected>전체</option>
+              <option value="title">제목</option>
+              <option value="content">내용</option>
+              <option value="id">작성자아이디</option>
+            </select>
+            <input
+              type="text"
+              name="keyword"
+              id="search_keyword"
+              required
+            />
+            <input type="image" src="../img/community/search.gif" />
+          </div>
+        </form>
         <div class="adminDiv">
           정렬
           <select class="size" name="order_select" id="order_select">
@@ -186,9 +167,9 @@
           <div>
             한페이지 행수
             <select class="size" name="page_select" id="page_select">
-              <option value="page10" selected>10개씩 보기</option>
-              <option value="page10">20개씩 보기</option>
-              <option value="page10">50개씩 보기</option>
+              <option value="10" selected>10개씩 보기</option>
+              <option value="20">20개씩 보기</option>
+              <option value="50">50개씩 보기</option>
             </select>
           </div>
         </div>
@@ -202,52 +183,16 @@
                 <th>작성일</th>
               </tr>
             </thead>
-            <tbody>
-              <tr
-                onclick="location.href='/admin_notice_view?notice_idx=5';"
-                style="cursor: pointer"
-              >
-                <td>1</td>
-                <td>타이틀1</td>
-                <td>admin</td>
-                <td>2024-04-09</td>
-              </tr>
-              <tr
-                onclick="location.href='/admin_notice_view?notice_idx=4';"
-                style="cursor: pointer"
-              >
-                <td>2</td>
-                <td>타이틀1</td>
-                <td>admin</td>
-                <td>2024-04-08</td>
-              </tr>
-              <tr
-                onclick="location.href='/admin_notice_view?notice_idx=3';"
-                style="cursor: pointer"
-              >
-                <td>3</td>
-                <td>타이틀1</td>
-                <td>admin</td>
-                <td>2024-04-07</td>
-              </tr>
-              <tr
-                onclick="location.href='/admin_notice_view?notice_idx=2';"
-                style="cursor: pointer"
-              >
-                <td>4</td>
-                <td>타이틀1</td>
-                <td>admin</td>
-                <td>2024-04-07</td>
-              </tr>
-              <tr
-                onclick="location.href='/admin_notice_view?notice_idx=1';"
-                style="cursor: pointer"
-              >
-                <td>5</td>
-                <td>타이틀1</td>
-                <td>admin</td>
-                <td>2024-04-05</td>
-              </tr>
+            <tbody id = "adminTable">
+              <c:forEach items="${list}" var="c" begin="0" end="9" varStatus="status">
+                <tr onclick="location.href='<c:url value="/admin_notice_view"/>?idx=${c.noticeIdx}';"
+                    style="cursor: pointer" >
+                  <td>${status.count}</td>
+                  <td>${c.noticeTitle}</td>
+                  <td>${c.noticeMemberId}</td>
+                  <td><fmt:formatDate pattern="yyyy-MM-dd" value="${c.noticeDate}"/></td>
+                </tr>
+              </c:forEach>
             </tbody>
           </table>
         </div>
@@ -263,7 +208,7 @@
             <a href="/admin_notice?page=2">다음</a>
             <a href="/admin_notice?page=3">마지막</a>
           </div>
-          <div><a href="/admin_notice_write">공지글 쓰기</a></div>
+          <div><a href="<c:url value="/admin_notice_write"/>">공지글 쓰기</a></div>
         </div>
       </div>
     </div>
@@ -324,5 +269,3 @@
         $("#back-to-top").tooltip("show");
       });
     </script>
-  </body>
-</html>

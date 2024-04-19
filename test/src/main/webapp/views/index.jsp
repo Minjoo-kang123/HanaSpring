@@ -104,7 +104,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#">커뮤니티</a>
                     <div class="dropdown-content">
-                        <a href="<c:url value="/board"/> ">공지사항</a>
+                        <a href="<c:url value="/community/community01"/> ">공지사항</a>
                         <a href="#">홍보자료</a>
                         <a href="#">채용안내</a>
                     </div>
@@ -113,8 +113,8 @@
                     <a class="nav-link" href="#">고객지원</a>
                     <div class="dropdown-content">
                         <a href="<c:url value="/customer/customer01"/>">1:1문의</a>
-                        <a href="./customer/customer02.html">묻고답하기</a>
-                        <a href="./customer/customer03.html">FAQ</a>
+                        <a href="<c:url value="/customer/customer02"/>">묻고답하기</a>
+                        <a href="<c:url value="/customer/customer03"/>">FAQ</a>
                     </div>
                 </li>
             </ul>

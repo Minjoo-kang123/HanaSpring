@@ -47,6 +47,20 @@ public class CustomerController {
         model.addAttribute("list", list);
         return "index";
     }
+
+    @RequestMapping("/customer02Sc")
+    public String customer02sc(Model model, HttpSession session,
+                                @RequestParam("keyword") String key, @RequestParam("select") String select) throws Exception {
+        if(session.getAttribute("id") == null) {
+            model.addAttribute("location","/member/login");
+            model.addAttribute("msg","로그인 후 사용하세요.");
+            return "alert";
+        }
+        List<CompanyQnaDto> list = companyQnaService.search(key, select);
+        model.addAttribute("center", dir + "customer2");
+        model.addAttribute("list", list);
+        return "index";
+    }
     @RequestMapping("/customer024")
     public String customer024(Model model, HttpSession session, @RequestParam("id") int id) throws Exception {
         log.info("hello");

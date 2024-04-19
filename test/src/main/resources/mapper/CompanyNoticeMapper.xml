@@ -8,16 +8,43 @@
         SELECT * FROM company_notice WHERE notice_idx=#{noticeIdx}
     </select>
 
+    <select id="searchContent" parameterType="String" resultType="CompanyNoticeDto">
+        SELECT * FROM company_notice WHERE LOWER(notice_content) LIKE CONCAT('%', #{param1}, '%')
+    </select>
+    <select id="searchTitle" parameterType="String" resultType="CompanyNoticeDto">
+        SELECT * FROM company_notice WHERE LOWER(notice_title) LIKE CONCAT('%', #{param1}, '%')
+    </select>
+    <select id="searchAll" parameterType="String" resultType="CompanyNoticeDto">
+        SELECT * FROM company_notice WHERE LOWER(notice_content) LIKE CONCAT('%', LOWER(#{param1}), '%')
+                                        or LOWER(notice_member_id) LIKE CONCAT('%', LOWER(#{param1}), '%')
+                                        or LOWER(notice_title) LIKE CONCAT('%', LOWER(#{param1}), '%')
+    </select>
+    <select id="searchId" parameterType="String" resultType="CompanyNoticeDto">
+        SELECT * FROM company_notice WHERE LOWER(notice_member_id )LIKE CONCAT('%', LOWER(#{param1}), '%')
+    </select>
+
     <select id="selectAll" resultType="CompanyNoticeDto">
         SELECT * FROM company_notice
     </select>
+
+    <select id="selectedDateDesc" resultType="CompanyNoticeDto">
+        SELECT * FROM company_notice order by notice_date desc
+    </select>
+    <select id="selectedDateAsc" resultType="CompanyNoticeDto">
+        SELECT * FROM company_notice order by notice_date asc
+    </select>
+    <select id="selectedIdDesc" resultType="CompanyNoticeDto">
+        SELECT * FROM company_notice order by notice_member_id desc
+    </select>
+    <select id="selectedIdAsc" resultType="CompanyNoticeDto">
+        SELECT * FROM company_notice order by notice_member_id asc
+    </select>
+
     <insert id="insert" parameterType="CompanyNoticeDto">
-        INSERT INTO company_notice VALUES (0, #{one2oneName},#{one2onePhone},#{one2oneEmail},
-                                           #{one2oneAddress},#{one2oneTitle},#{one2oneContent}, now())
+        INSERT INTO company_notice VALUES (0, #{noticeTitle},#{noticeContent},#{noticeMemberId},now())
     </insert>
     <update id="update" parameterType="CompanyNoticeDto">
-        UPDATE company_notice SET one2one_name=#{one2oneName}, one2one_phone=#{one2onePhone}, one2one_email=#{one2oneEmail},
-                                   one2one_address=#{one2oneAddress}, one2one_title=#{one2oneTitle}, one2one_content=#{one2oneContent}  WHERE one2one_idx=#{one2oneIdx}
+        UPDATE company_notice SET notice_content = #{noticeContent} WHERE notice_idx=#{noticeIdx}
     </update>
     <delete id="delete" parameterType="Integer">
         DELETE FROM company_notice WHERE notice_idx=#{noticeIdx}

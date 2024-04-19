@@ -7,6 +7,19 @@
     <select id="select" parameterType="Integer" resultType="CompanyQnaDto">
         SELECT * FROM company_qna WHERE qna_idx=#{qnaIdx}
     </select>
+    <!--Search 시작-->
+    <select id="searchContent" parameterType="String" resultType="CompanyQnaDto">
+        SELECT * FROM company_qna WHERE qna_content LIKE CONCAT('%', #{param1}, '%')
+    </select>
+
+    <select id="searchTitle" parameterType="String" resultType="CompanyQnaDto">
+        SELECT * FROM company_qna WHERE qna_title LIKE CONCAT('%', #{param1}, '%')
+    </select>
+
+    <select id="searchWriter" parameterType="String" resultType="CompanyQnaDto">
+        SELECT * FROM company_qna WHERE qna_name LIKE CONCAT('%', #{param1}, '%')
+    </select>
+    <!--Search 끛-->
 
     <select id="selectAll" resultType="CompanyQnaDto">
         SELECT * FROM company_qna

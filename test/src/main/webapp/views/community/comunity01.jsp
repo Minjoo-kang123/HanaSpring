@@ -61,7 +61,7 @@
                 공지사항
             </a>
             <ul class="dropdown-menu asd">
-                <li><a class="dropdown-item" href="../community/community01.html">공지사항</a></li>
+                <li><a class="dropdown-item" href="../community/community01">공지사항</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">홍보자료</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -100,24 +100,23 @@
 
 <!-- search bar -->
 <div class="search container">
-    <form>
-    <table>
-        <tr>
-            <td>
-                <select name="select" id="select">
-                    <option value="title">제목</option>
-                    <option value="content">내용</option>
-                    <option value="writer">작성자</option>
-                </select>
-            </td>
-            <td>
-                <input type="text" name = "keyword" id = "keyword">
-            </td>
-            <td>
-                <button id="searchBtn"><img src="<c:url value="/img/community/search.gif"/>"></button>
-            </td>
-        </tr>
-    </table>
+    <form action="<c:url value="/community/community01Sc"/>" method="GET">
+        <table>
+            <tr>
+                <td>
+                    <select name="select" id="select">
+                        <option value="title">제목</option>
+                        <option value="content">내용</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" name = "keyword" id = "keyword" required>
+                </td>
+                <td>
+                    <input type="image" src="<c:url value="/img/community/search.gif"/>">
+                </td>
+            </tr>
+        </table>
     </form>
 </div>
 

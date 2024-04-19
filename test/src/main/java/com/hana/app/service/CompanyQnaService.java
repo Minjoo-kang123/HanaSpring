@@ -40,4 +40,18 @@ public class CompanyQnaService implements TestService<Integer, CompanyQnaDto> {
     public List<CompanyQnaDto> get() throws Exception {
         return companyQnaRepository.selectAll();
     }
+
+
+    public List<CompanyQnaDto> search(String key, String select) throws Exception {
+        switch (select){
+            case "title" :
+                return companyQnaRepository.searchTitle(key);
+            case "content":
+                return companyQnaRepository.searchContent(key);
+            case "writer":
+                return companyQnaRepository.searchWriter(key);
+            default:
+                return null;
+        }
+    }
 }

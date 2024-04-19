@@ -188,9 +188,9 @@
                 <th>작성자</th>
                 <th>작성일</th>
             </tr>
-            <c:forEach items="${list}" var="c">
+            <c:forEach items="${list}" var="c" varStatus="status">
                 <tr onclick="opening(${c.qnaIdx}, ${c.qnaPw})">
-                    <td>${c.qnaIdx}</td>
+                    <td>${status.count}</td>
                     <td><img src="../img/customer/icon_sct.gif">${c.qnaTitle}</td>
                     <td>${c.qnaName}</td>
                     <td><fmt:formatDate pattern="yyyy-MM-dd" value="${ c.qnaDate }"/></td>
@@ -224,21 +224,23 @@
         <img onclick="window.location.href='customer02_2.html'"
              src="../img/customer/write.gif">
     </div>
-    <table>
-        <tr>
-            <td>
-                <select name="내용" id="">
-                    <option value="">제목</option>
-                    <option value="">내용</option>
-                    <option value="">작성자</option>
-                </select>
-            </td>
-            <td>
-                <input type="text">
-            </td>
-            <td>
-                <input type="image" src="../img/customer/search.gif">
-            </td>
-        </tr>
-    </table>
+    <form action="<c:url value="/customer/customer02Sc"/>">
+        <table>
+            <tr>
+                <td>
+                    <select name="select" id="select">
+                        <option value="title">제목</option>
+                        <option value="content">내용</option>
+                        <option value="writer">작성자</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" name = "keyword" required>
+                </td>
+                <td>
+                    <input type="image" src="<c:url value="/img/customer/search.gif"/>">
+                </td>
+            </tr>
+        </table>
+    </form>
 </div>

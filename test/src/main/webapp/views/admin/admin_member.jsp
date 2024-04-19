@@ -1,5 +1,102 @@
 
-  <!-- 메인 -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="<c:url value="/css/admin/admin.css"/>">
+<script>
+	let data = null;
+	let perpage = 10;
+	function formatDate(date) {
+		const d = new Date(date);
+		const year = d.getFullYear();
+		const month = String(d.getMonth() + 1).padStart(2, '0');
+		const day = String(d.getDate()).padStart(2, '0');
+		return year + '-' + month + "-" + day;
+	}
+	$(document).ready(function(){
+
+		$('#page_select').change(function() {
+			var selectedOption = $('#order_select').val();
+			let perpage = $(this).val();
+			// AJAX 요청
+			$.ajax({
+				type: "GET",
+				url: "/admin_member/order",
+				data: { order: selectedOption },
+				success: function(data) {
+					this.data = data;
+					var tbodyContent = ''; // 새로운 tbody 내용을 저장할 변수
+
+					for(let i = 0; i < perpage; i++){
+						if(data[i] == null)
+							break;
+						tbodyContent += '<tr>';
+						tbodyContent += '<td>' + data[i].memberId + '</td>';
+						tbodyContent += '<td>' + data[i].memberName + '</td>';
+						tbodyContent += '<td>' + data[i].memberEmail + '</td>';
+						tbodyContent += '<td>' + data[i].memberBirthDate + '</td>';
+						tbodyContent += '<td>' + formatDate(data[i].memberJoinDate)+ '</td>';
+						tbodyContent += '</tr>';
+					}
+					// 생성한 tbody 내용을 #memberTable에 추가
+					$('#memberTable').html(tbodyContent);
+				},
+				error: function(xhr, status, error) {
+					console.error("AJAX Error:", status, error);
+				}
+			});
+		});
+
+		// 정렬 기준이 변경될 때마다
+		$('#order_select').change(function() {
+			var selectedOption = $(this).val();
+			// AJAX 요청
+			$.ajax({
+				type: "GET",
+				url: "/admin_member/order",
+				data: { order: selectedOption },
+				success: function(data) {
+					this.data = data;
+					var tbodyContent = ''; // 새로운 tbody 내용을 저장할 변수
+					if(perpage == 50){
+						data.forEach(function(item) {
+							// 각 데이터 항목을 기반으로 tr 요소 생성
+							tbodyContent += '<tr>';
+							tbodyContent += '<td>' + item.memberId + '</td>';
+							tbodyContent += '<td>' + item.memberName + '</td>';
+							tbodyContent += '<td>' + item.memberEmail + '</td>';
+							tbodyContent += '<td>' + item.memberBirthDate + '</td>';
+							tbodyContent += '<td>' + formatDate(item.memberJoinDate)+ '</td>';
+							tbodyContent += '</tr>';
+
+						});
+					}
+					else{
+						for(let i = 0; i < perpage; i++){
+							if(data[i] == null)
+								break;
+							tbodyContent += '<tr>';
+							tbodyContent += '<td>' + data[i].memberId + '</td>';
+							tbodyContent += '<td>' + data[i].memberName + '</td>';
+							tbodyContent += '<td>' + data[i].memberEmail + '</td>';
+							tbodyContent += '<td>' + data[i].memberBirthDate + '</td>';
+							tbodyContent += '<td>' + formatDate(data[i].memberJoinDate)+ '</td>';
+							tbodyContent += '</tr>';
+						}
+					}
+
+					// 생성한 tbody 내용을 #memberTable에 추가
+					$('#memberTable').html(tbodyContent);
+				},
+				error: function(xhr, status, error) {
+					console.error("AJAX Error:", status, error);
+				}
+			});
+		});
+	});
+</script>
+<!-- 메인 -->
   <!-- COMMON -->
   
   <div class="commonSection1">
@@ -34,22 +131,22 @@
   		<div class="adminDiv">
   			<h3>회원관리</h3>
   		</div>
-  		<div class="adminDiv">
-  			검색 옵션 
-  			<select name="search_select" id="search_select">
-          <option value="all" selected>전체</option>
-          <option value="id">아이디</option>
-          <option value="name">성명</option>
-          <option value="email">이메일</option>
-          <option value="phone">핸드폰</option>
-          <option value="address">주소</option>
-        </select>
-        <input type="text" name="search_keyword" id="search_keyword" value="">
-        <input type="image" src="../img/community/search.gif">
-  		</div>
+		<form action="<c:url value="/adminSc"/>">
+			<div class="adminDiv">
+				검색 옵션
+				<select name="select" id="search_select">
+				  <option value="all" selected>전체</option>
+				  <option value="id">아이디</option>
+				  <option value="name">성명</option>
+				  <option value="email">이메일</option>
+				</select>
+			<input type="text" name="keyword" id="search_keyword" required>
+			<input type="image" src="../img/community/search.gif">
+  			</div>
+		</form>
   		<div class="adminDiv">
   		  정렬
-  		  <select class="size" name="order_select" id="order_select">
+  		  <select class="size" name="order_select" id="order_select" onchange="">
           <option value="id_asc" selected>아이디 오름차순</option>
           <option value="id_desc">아이디 내림차순</option>
           <option value="join_date_asc">가입일 오름차순</option>
@@ -60,9 +157,9 @@
   		  <div>회원목록 1건</div>
   		  <div>한페이지 행수
 	  		  <select class="size" name="page_select" id="page_select">
-	          <option value="page10" selected>10개씩 보기</option>
-	          <option value="page10">20개씩 보기</option>
-	          <option value="page10">50개씩 보기</option>
+	          <option value="10" selected>10개씩 보기</option>
+	          <option value="20">20개씩 보기</option>
+	          <option value="50">50개씩 보기</option>
 	        </select>
   		  </div>
   		</div>
@@ -75,21 +172,18 @@
 	  			  	<th>이메일</th>
 	  			  	<th>생일</th>
 	  			  	<th>가입일</th>
-	  			  	<th>임시비밀번호</th>
   			  	</tr>
   			  </thead>
-  			  <tbody>
-	  			  
-	  			    <tr>
-		  			    <td>hong</td>
-	  			  		<td>홍길동</td>
-	  			  		<td>test@gmail.com</td>
-	  			  		<td>2000-01-01</td>
-	  			  		<td>2024-04-09</td>
-	  			  		<td><button id="sendEmail">이메일보내기</button></td>
-	  			  	</tr>
-					  
-	  
+  			  <tbody id = "memberTable">
+				  <c:forEach items="${list}" var="c" begin="0" end="9">
+						<tr>
+							<td>${c.memberId}</td>
+							<td>${c.memberName}</td>
+							<td>${c.memberEmail}</td>
+							<td>${c.memberBirthDate}</td>
+							<td><fmt:formatDate pattern="yyyy-MM-dd" value="${ c.memberJoinDate }"/></td>
+						</tr>
+				  </c:forEach>
   			  </tbody>
   			</table>
   		</div>
